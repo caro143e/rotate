@@ -5,3 +5,30 @@ Author: Caroline og Helena
 Version: 1.0.0
 Description: Stylish Child Theme based on Astra
 */
+
+.card {
+    font-family: var(--fontFamiliesFontSans);
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+  }
+
+.card body_primary {
+    margin-top: var(--spaceCardStackMd);
+    margin-bottom: var(--spaceCardStackNone);
+    font-size: var(--body_primary);
+  }
+
+.card body_secondary {
+    margin-top: var(--spaceCardStackSm);
+    margin-bottom: var(--spaceCardStackMd);
+    font-size: var(--body_secondary);
+  }
+
+  .card color {
+    margin-top: var(--spaceCardStackSm);
+    margin-bottom: var(--spaceCardStackMd);
+  }

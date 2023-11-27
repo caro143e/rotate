@@ -1,0 +1,112 @@
+:root {
+    /* farver */
+    --Bg-Primary: #FCFCFC;
+    --text-Primary: #212121;
+
+  
+  
+    /* font */
+    --fontFamiliesFontSans: Work Sans;
+    --fontFamiliesFontDisplay: Druk;
+  
+    /* spacing Global */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+    --spacing-2xl: 128px;
+
+    /* font sizes Global*/
+    --fontSize-breadcrumbs: 12.8px;
+    --fontSize-body: 16px;
+    --fontSize-h3: 20px;
+    --fontSize-h2: 25px;
+    --fontSize-h1: 31.25px;
+    --fontSize-Display-secondary: 48.83px;
+    --fontSize-Display: 363.8px;
+
+    /* Line height */
+    --lineHeights0: AUTO;
+    --lineHeightsBase: 1.5;
+    --lineHeightsHeading: 1.1;
+
+     /* font weight */
+     --super: 700;
+     --semibold: 500;
+     --regular: 300;
+  
+    }
+
+  /*Typography token*/
+  .Display {
+    font-family: var(--fontFamiliesFontDisplay);
+    font-weight: var(--super);
+    font-size: var(--fontSize-Display);
+    line-height: var(--lineHeightsHeading);
+
+}
+.Typography_Display_secondary {
+    font-family: var(--fontFamiliesFontDisplay);
+    font-weight: var(--semibold);
+    font-size: var(--fontSize-Display-secondary);
+    line-height: var(--lineHeightsHeading);
+}
+
+.Typography_h1 {
+    font-family: var(--fontFamiliesFontSans);
+    font-size: var(--fontSize-h1);
+    line-height: var(--lineHeightsHeading);
+    font-weight: var(--semibold);
+
+}
+
+.Typography_h2 {
+    font-family: var(--fontFamiliesFontSans);
+    font-size: var(--fontSize-h2);
+    line-height: var(--lineHeightsHeading);
+    font-weight: var(--semibold);
+}
+.Typography_h3 {
+    font-family: var(--fontFamiliesFontSans);
+    font-size: var(--fontSize-h3);
+    line-height: var(--lineHeightsHeading);
+    font-weight: var(--semibold);
+}
+
+.Typography_body_primary {
+    font-family: var(--fontFamiliesFontSans);
+    font-size: var(--fontSize-body);
+    line-height: var(--lineHeightsBase);
+    font-weight: var(--regular);
+}
+
+.Typography_body_secondary {
+    font-family: var(--fontFamiliesFontSans);
+    font-size: var(--fontSize-body);
+    line-height: var(--lineHeightsBase);
+    font-weight: var(--regular);
+}
+
+.Typography_button {
+    font-family: var(--fontFamiliesFontSans);
+    font-size: var(--fontSize-body);
+    line-height: var(--lineHeightsBase);
+    font-weight: var(--regular);
+}
+
+.Typography_navigation {
+    font-family: var(--fontFamiliesFontSans);
+    font-size: var(--fontSize-body);
+    line-height: var(--lineHeightsBase);
+    font-weight: var(--regular);
+}
+
+.Typography_breadcrumbs {
+    font-family: var(--fontFamiliesFontSans);
+    font-size: var(--fontSize-breadcrumbs);
+    line-height: var(--lineHeightsBase);
+    font-weight: var(--regular);
+}
+
+
