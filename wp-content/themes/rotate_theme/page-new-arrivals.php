@@ -30,7 +30,7 @@ get_header();
         function visNews() {
             let temp = document.querySelector("template");
             let container = document.querySelector(".newcontainer")
-            news.forEach(new => {
+            news.forEach(news => {
                 let klon = temp.cloneNode(true).content;
                 klon.querySelector(".title").textContent = new.title.rendered;
                 klon.querySelector("img").src = new.produktbillede.guid;
