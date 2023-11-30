@@ -3,10 +3,8 @@ get_header();
 ?>
 <template>
     <article>
-        <img src="" alt="">
             <div>
                 <p class="title"></p>
-                <p class="pris"></p>
             </div>
     </article>
 </template>
@@ -18,7 +16,7 @@ get_header();
 
     <script>
         let shops;
-        const dbUrl = "https://loststudios.dk/kea/rotate/wp-json/wp/v2/shop-all?per_page=100";
+        const dbUrl = "https://loststudios.dk/kea/rotate/wp-json/wp/v2/shop?per_page=100";
 
         async function getJson() {
             const data = await fetch(dbUrl);
@@ -33,8 +31,8 @@ get_header();
             shops.forEach(shop => {
                 let klon = temp.cloneNode(true).content;
                 klon.querySelector(".title").textContent = shop.title.rendered;
-                klon.querySelector("img").src = shop.produktbillede.guid;
-                klon.querySelector(".pris").textContent = shop.pris;
+                //klon.querySelector("img").src = shop.produktbillede.guid;
+                //klon.querySelector(".pris").textContent = shop.pris;
 
                 container.appendChild(klon);
 
