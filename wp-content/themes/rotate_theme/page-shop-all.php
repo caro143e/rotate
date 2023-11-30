@@ -18,7 +18,7 @@ get_header();
 
     <script>
         let shops;
-        const dbUrl = "https://loststudios.dk/kea/rotate/wp-json/wp/v2/shop?per_page=100";
+        const dbUrl = "https://loststudios.dk/kea/rotate/wp-json/wp/v2/shop-all?per_page=100";
 
         async function getJson() {
             const data = await fetch(dbUrl);
