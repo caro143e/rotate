@@ -144,9 +144,9 @@ Description: Stylish Child Theme based on Astra
     font-weight: var(--regular);
 }
 
-.site-main .partycontainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.partycontainer {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important; 
     padding: 50px;
     width: 100%;
     max-width: 1500px;
