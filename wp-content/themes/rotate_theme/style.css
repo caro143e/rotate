@@ -147,7 +147,6 @@ Description: Stylish Child Theme based on Astra
 .cardcontainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding: 50px;
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
