@@ -5,7 +5,7 @@ get_header();
     <article>
         <img src="" alt="">
             <div>
-                <h2></h2>
+                <p class="title"></p>
                 <p class="pris"></p>
             </div>
     </article>
@@ -29,12 +29,11 @@ get_header();
 
         function visRetter() {
             let temp = document.querySelector("template");
-            let container = document.querySelector(".retcontainer")
-            retter.forEach(ret => {
+            let container = document.querySelector(".retcontainer")retter.forEach(ret => {
                 let klon = temp.cloneNode(true).content;
-                klon.querySelector("h2").textContent = ret.title.rendered;
+                klon.querySelector(".title").textContent = ret.title.rendered;
                 klon.querySelector("img").src = ret.produktbillede.guid;
-                klon.querySelector("pris").textContent = ret.pris;
+                klon.querySelector(".pris").textContent = ret.pris;
 
                 container.appendChild(klon);
 
