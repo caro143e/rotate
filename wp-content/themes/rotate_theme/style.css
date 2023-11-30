@@ -144,7 +144,7 @@ Description: Stylish Child Theme based on Astra
     font-weight: var(--regular);
 }
 
-.site-main h2 {
+#main h2 {
     font-size: 64px;
 }
 
