@@ -32,7 +32,7 @@ get_header();
 
         function visShops() {
             let temp = document.querySelector("template");
-            let container = document.querySelector(".shopcontainer")
+            let container = document.querySelector(".cardcontainer")
             shops.forEach(shop => {
                 let klon = temp.cloneNode(true).content;
                 klon.querySelector(".title").textContent = shop.title.rendered;
