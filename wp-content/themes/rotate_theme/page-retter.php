@@ -17,12 +17,12 @@ get_header();
     </main>
 
     <script>
-        let party;
+        let retter;
         const dbUrl = "https://loststudios.dk/kea/rotate/wp-json/wp/v2/ret?per_page=100";
 
         async function getJson() {
             const data = await fetch(dbUrl);
-            party = await data.json();
+            retter = await data.json();
             console.log(retter);
             visRetter();
         }
