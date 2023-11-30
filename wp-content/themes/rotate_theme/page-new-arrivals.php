@@ -32,9 +32,9 @@ get_header();
             let container = document.querySelector(".newcontainer")
             news.forEach(news => {
                 let klon = temp.cloneNode(true).content;
-                klon.querySelector(".title").textContent = new.title.rendered;
-                klon.querySelector("img").src = new.produktbillede.guid;
-                klon.querySelector(".pris").textContent = new.pris;
+                klon.querySelector(".title").textContent = news.title.rendered;
+                klon.querySelector("img").src = news.produktbillede.guid;
+                klon.querySelector(".pris").textContent = news.pris;
 
                 container.appendChild(klon);
 
