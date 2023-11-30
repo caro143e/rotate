@@ -18,7 +18,7 @@ get_header();
 
     <script>
         let party;
-        const dbUrl = "https://loststudios.dk/kea/rotate/wp-json/wp/v2/partys?per_page=100";
+        const dbUrl = "https://loststudios.dk/kea/rotate/wp-json/wp/v2/party?per_page=100";
 
         async function getJson() {
             const data = await fetch(dbUrl);
