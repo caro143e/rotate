@@ -7,7 +7,6 @@ get_header();
             <div>
                 <h2></h2>
                 <p class="pris"></p>
-                <p class="farve"></p>
             </div>
     </article>
 </template>
@@ -34,7 +33,7 @@ get_header();
             retter.forEach(ret => {
                 let klon = temp.cloneNode(true).content;
                 klon.querySelector("h2").textContent = ret.title.rendered;
-                klon.querySelector("img").src = ret.guid.rendered;
+                klon.querySelector("img").src = ret.produktbillede.guid;
                 klon.querySelector("pris").textContent = ret.pris;
 
                 container.appendChild(klon);
