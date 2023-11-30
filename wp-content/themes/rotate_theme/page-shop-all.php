@@ -31,8 +31,8 @@ get_header();
             shops.forEach(shop => {
                 let klon = temp.cloneNode(true).content;
                 klon.querySelector(".title").textContent = shop.title.rendered;
-                //klon.querySelector("img").src = shop.produktbillede.guid;
-                //klon.querySelector(".pris").textContent = shop.pris;
+                klon.querySelector("img").src = shop.produktbillede.guid;
+                klon.querySelector(".pris").textContent = shop.pris;
 
                 container.appendChild(klon);
 
