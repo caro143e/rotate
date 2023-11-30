@@ -1,19 +1,22 @@
 <?php
 get_header();
 ?>
-<template>
-            <article>
-                <img src="" alt="">
-                <div>
-                    <h2></h2>
-                    <p>pris</p>
-                    <p>farve</p>
-                </div>
-            </article>
-        </template>
+ <main id="main" class="site-main">
+    <h2>Rotate sunday</h2>
+  <section class="cardcontainer"></section>  
+    <template>
+        <article>
+            <img src="" alt="">
+             <div>
+                 <p class="title"></p>
+                 <p class="pris"></p>
+             </div>
+        </article>
+    </template>
+
 <section id="primary" class="content-area">
-    <main id="main" class="site-main">
-        <section class="cardcontainer"></section>
+   
+        
     </main>
 
     <script>
@@ -29,16 +32,19 @@ get_header();
 
         function visSundays() {
             let temp = document.querySelector("template");
-            let container = document.querySelector(".cardcontainer")sundays.forEach(sunday => {
+            let container = document.querySelector(".cardcontainer")
+            Sundays.forEach(sunday => {
                 let klon = temp.cloneNode(true).content;
-                klon.querySelector("h2").textContent = party.navn;
-                klon.querySelector("img").src = billedUrl+ sunday.billede;
+                klon.querySelector(".title").textContent = sunday.title.rendered;
+                klon.querySelector("img").src = sunday.produktbillede.guid;
                 klon.querySelector(".pris").textContent = sunday.pris;
-                klon.querySelector(".farve").textContent = sunday.farve;
-                klon.querySelector("article").addEventListener("click", ()=> {location.href = "restdb-single.html?id"+sunday._id;})
+
                 container.appendChild(klon);
+
             })
         }
+
+    
 
         getJson();
 
