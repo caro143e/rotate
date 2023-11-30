@@ -24,12 +24,12 @@ get_header();
             const data = await fetch(dbUrl);
             party = await data.json();
             console.log(party);
-            visPartys();
+            visParty();
         }
 
-        function visPartys() {
+        function visParty() {
             let temp = document.querySelector("template");
-            let container = document.querySelector(".produktcontainer")partys.forEach(ret => {
+            let container = document.querySelector(".produktcontainer")party.forEach(ret => {
                 let klon = temp.cloneNode(true).content;
                 klon.querySelector("h2").textContent = party.navn;
                 klon.querySelector("img").src = billedUrl+ party.billede;
