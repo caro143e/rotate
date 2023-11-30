@@ -23,8 +23,8 @@ get_header();
         async function getJson() {
             const data = await fetch(dbUrl);
             party = await data.json();
-            console.log(party);
-            visParty();
+            console.log(partys);
+            //visParty();
         }
 
         function visParty() {
