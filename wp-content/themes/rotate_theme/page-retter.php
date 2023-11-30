@@ -24,7 +24,7 @@ get_header();
             const data = await fetch(dbUrl);
             party = await data.json();
             console.log(retter);
-            //visParty();
+            visRetter();
         }
 
         function visRetter() {
