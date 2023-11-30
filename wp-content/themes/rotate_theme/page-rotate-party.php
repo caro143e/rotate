@@ -13,10 +13,7 @@ get_header();
              </div>
         </article>
     </template>
-
-<section id="primary" class="content-area">
    
-        
     </main>
 
     <script>
