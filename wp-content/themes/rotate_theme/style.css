@@ -151,11 +151,10 @@ Description: Stylish Child Theme based on Astra
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
-    background-color: #f0ede6;
   }
   
-.cardcontainer img {
-    border-bottom: solid 2px black;
+.cardcontainer img:hover {
+    border: solid 2px black;
   }
 
 

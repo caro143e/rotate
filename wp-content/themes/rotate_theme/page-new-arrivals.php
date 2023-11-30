@@ -13,7 +13,7 @@ get_header();
 
 <section id="primary" class="content-area">
     <main id="main" class="site-main">
-        <section class="newcontainer"></section>
+        <section class="cardcontainer"></section>
     </main>
 
     <script>
@@ -29,7 +29,7 @@ get_header();
 
         function visNews() {
             let temp = document.querySelector("template");
-            let container = document.querySelector(".newcontainer")
+            let container = document.querySelector(".cardcontainer")
             news.forEach(news => {
                 let klon = temp.cloneNode(true).content;
                 klon.querySelector(".title").textContent = news.title.rendered;
