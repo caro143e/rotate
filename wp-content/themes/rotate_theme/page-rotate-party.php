@@ -1,19 +1,22 @@
 <?php
 get_header();
 ?>
-<template>
-    <article>
-        <img src="" alt="">
-            <div>
-                <p class="title"></p>
-                <p class="pris"></p>
-            </div>
-    </article>
-</template>
+ <main id="main" class="site-main">
+    <h2>Rotate party</h2>
+  <div class="partycontainer"></div>  
+    <template>
+        <article>
+            <img src="" alt="">
+             <div>
+                 <p class="title"></p>
+                 <p class="pris"></p>
+             </div>
+        </article>
+    </template>
 
 <section id="primary" class="content-area">
-    <main id="main" class="site-main">
-        <section class="partycontainer"></section>
+   
+        
     </main>
 
     <script>
