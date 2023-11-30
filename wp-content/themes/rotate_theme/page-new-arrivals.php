@@ -52,3 +52,18 @@ get_header();
 <?php
 get_footer();
 ?>
+<style>
+    .partycontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 50px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: #f0ede6;
+  }
+  
+  .partycontainer img {
+    border-bottom: solid 2px black;
+  }
+</style>
