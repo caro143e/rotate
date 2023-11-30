@@ -3,7 +3,7 @@ get_header();
 ?>
  <main id="main" class="site-main">
     <h2>Rotate party</h2>
-  <div class="partycontainer"></div>  
+  <section class="partycontainer"></section>  
     <template>
         <article>
             <img src="" alt="">
@@ -13,7 +13,10 @@ get_header();
              </div>
         </article>
     </template>
+
+<section id="primary" class="content-area">
    
+        
     </main>
 
     <script>
