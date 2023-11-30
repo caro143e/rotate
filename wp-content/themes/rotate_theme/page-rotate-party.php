@@ -3,7 +3,7 @@ get_header();
 ?>
  <main id="main" class="site-main">
     <div class="banner">
-        <img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/glitter_logo.svg" alt="Rotate logo">
+        <img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/rotate.svg" alt="Rotate logo">
     </div>
  
   <section class="cardcontainer"></section>  
