@@ -29,7 +29,7 @@ get_header();
 
         function visSundays() {
             let temp = document.querySelector("template");
-            let container = document.querySelector(".cardcontainer")sundays.forEach(ret => {
+            let container = document.querySelector(".cardcontainer")sundays.forEach(sunday => {
                 let klon = temp.cloneNode(true).content;
                 klon.querySelector("h2").textContent = party.navn;
                 klon.querySelector("img").src = billedUrl+ sunday.billede;
