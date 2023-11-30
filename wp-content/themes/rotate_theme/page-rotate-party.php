@@ -2,7 +2,7 @@
 get_header();
 ?>
  <main id="main" class="site-main">
- <img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/instagram.png" alt="instagram icon">
+ <img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/glitter_logo.svg" alt="Rotate logo">
   <section class="cardcontainer"></section>  
     <template>
         <article>
