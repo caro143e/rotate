@@ -29,7 +29,8 @@ get_header();
 
         function visRetter() {
             let temp = document.querySelector("template");
-            let container = document.querySelector(".retcontainer") retter.forEach(ret => {
+            let container = document.querySelector(".retcontainer")
+            retter.forEach(ret => {
                 let klon = temp.cloneNode(true).content;
                 klon.querySelector(".title").textContent = ret.title.rendered;
                 klon.querySelector("img").src = ret.produktbillede.guid;
