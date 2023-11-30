@@ -156,6 +156,9 @@ Description: Stylish Child Theme based on Astra
 .cardcontainer img:hover {
     border: solid 2px black;
   }
-
+  .banner {
+    background-color: #313030;
+    position: relative;
+}
 
 

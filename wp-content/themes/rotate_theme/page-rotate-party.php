@@ -2,7 +2,10 @@
 get_header();
 ?>
  <main id="main" class="site-main">
- <img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/glitter_logo.svg" alt="Rotate logo">
+    <div class="banner">
+        <img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/glitter_logo.svg" alt="Rotate logo">
+    </div>
+ 
   <section class="cardcontainer"></section>  
     <template>
         <article>
