@@ -2,7 +2,7 @@
 get_header();
 ?>
  <main id="main" class="site-main">
-    <h2>Rotate party</h2>
+ <img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/instagram.png" alt="instagram icon">
   <section class="cardcontainer"></section>  
     <template>
         <article>
