@@ -18,7 +18,7 @@ get_header();
 
     <script>
         let news;
-        const dbUrl = "https://loststudios.dk/kea/rotate/wp-json/wp/v2/new?per_page=100";
+        const dbUrl = "https://loststudios.dk/kea/rotate/wp-json/wp/v2/news?per_page=100";
 
         async function getJson() {
             const data = await fetch(dbUrl);
