@@ -17,20 +17,20 @@ get_header();
     </main>
 
     <script>
-        let new;
+        let news;
         const dbUrl = "https://loststudios.dk/kea/rotate/wp-json/wp/v2/new?per_page=100";
 
         async function getJson() {
             const data = await fetch(dbUrl);
-            new = await data.json();
-            console.log(new);
-            visNew();
+            news = await data.json();
+            console.log(news);
+            visNews();
         }
 
-        function visNew() {
+        function visNews() {
             let temp = document.querySelector("template");
             let container = document.querySelector(".newcontainer")
-            new.forEach(new => {
+            news.forEach(new => {
                 let klon = temp.cloneNode(true).content;
                 klon.querySelector(".title").textContent = new.title.rendered;
                 klon.querySelector("img").src = new.produktbillede.guid;
