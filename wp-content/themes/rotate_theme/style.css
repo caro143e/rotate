@@ -144,7 +144,7 @@ Description: Stylish Child Theme based on Astra
     font-weight: var(--regular);
 }
 
-.partycontainer {
+.cardcontainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 50px;
@@ -154,7 +154,7 @@ Description: Stylish Child Theme based on Astra
     background-color: #f0ede6;
   }
   
-.partycontainer img {
+.cardcontainer img {
     border-bottom: solid 2px black;
   }
 
