@@ -27,7 +27,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 		
 	astra_footer_after(); 
 ?>
-	</div><!-- #page -->
+	</div>
+    
 <?php 
 	astra_body_bottom();    
 	wp_footer(); 
