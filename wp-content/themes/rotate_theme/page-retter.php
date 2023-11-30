@@ -36,7 +36,6 @@ get_header();
                 klon.querySelector("h2").textContent = ret.title.rendered;
                 klon.querySelector("img").src = ret.guid.rendered;
                 klon.querySelector("pris").textContent = ret.pris;
-                klon.querySelector("farve").textContent = ret.farve;
 
                 container.appendChild(klon);
 
