@@ -1,17 +1,22 @@
 <?php
 get_header();
 ?>
-<template>
-    <article>
-            <div>
-                <p class="title"></p>
-            </div>
-    </article>
-</template>
+ <main id="main" class="site-main">
+    <h2>Shop</h2>
+  <section class="cardcontainer"></section>  
+    <template>
+        <article>
+            <img src="" alt="">
+             <div>
+                 <p class="title"></p>
+                 <p class="pris"></p>
+             </div>
+        </article>
+    </template>
 
 <section id="primary" class="content-area">
-    <main id="main" class="site-main">
-        <section class="shopcontainer"></section>
+   
+        
     </main>
 
     <script>
