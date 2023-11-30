@@ -3,7 +3,7 @@ get_header();
 ?>
  <main id="main" class="site-main">
     <h2>Rotate party</h2>
-  <section class="partycontainer"></section>  
+  <section class="cardcontainer"></section>  
     <template>
         <article>
             <img src="" alt="">
@@ -32,7 +32,7 @@ get_header();
 
         function visPartys() {
             let temp = document.querySelector("template");
-            let container = document.querySelector(".partycontainer")
+            let container = document.querySelector(".cardcontainer")
             partys.forEach(party => {
                 let klon = temp.cloneNode(true).content;
                 klon.querySelector(".title").textContent = party.title.rendered;

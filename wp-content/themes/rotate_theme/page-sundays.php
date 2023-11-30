@@ -13,7 +13,7 @@ get_header();
         </template>
 <section id="primary" class="content-area">
     <main id="main" class="site-main">
-        <section class="produktcontainer"></section>
+        <section class="cardcontainer"></section>
     </main>
 
     <script>
@@ -29,7 +29,7 @@ get_header();
 
         function visSundays() {
             let temp = document.querySelector("template");
-            let container = document.querySelector(".produktcontainer")sundays.forEach(ret => {
+            let container = document.querySelector(".cardcontainer")sundays.forEach(ret => {
                 let klon = temp.cloneNode(true).content;
                 klon.querySelector("h2").textContent = party.navn;
                 klon.querySelector("img").src = billedUrl+ sunday.billede;
