@@ -5,6 +5,7 @@ get_header();
     <div class="banner">
         <img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/rotate.svg" alt="Rotate logo">
     </div>
+
  
   <section class="cardcontainer"></section>  
     <template>

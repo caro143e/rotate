@@ -145,11 +145,11 @@ Description: Stylish Child Theme based on Astra
 }
 
 .cardcontainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
   }
   
 .cardcontainer img:hover {
@@ -161,5 +161,19 @@ Description: Stylish Child Theme based on Astra
     padding-block: 64px;
     padding-inline: 256px;
 }
+
+/* Importér fonten i din CSS-fil */
+@font-face {
+  font-family: 'Druk'; /* Erstat med det ønskede navn */
+  src: url('sti/til/din/font.woff2') format('woff2'), /* Tilføj alle nødvendige formater */
+       url('sti/til/din/font.woff') format('woff');
+  /* Gentag dette for andre formater, hvis nødvendigt */
+}
+
+/* Brug din font på ønskede elementer */
+body {
+  font-family: 'Druk', sans-serif;
+}
+
 
 
