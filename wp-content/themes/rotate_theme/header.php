@@ -51,7 +51,7 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 		<header id="masthead" class="site-header">
         <div class="site-branding">
             <!-- Logo går her -->
-            <img src="/pictures/logo.svg" alt="Dit Logo">
+			<img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/logo.svg" alt="Rotate logo">
         </div>
 
         <nav id="site-navigation" class="main-navigation">
