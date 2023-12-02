@@ -67,3 +67,33 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 	<div id="content" class="site-content">
 		<div class="ast-container">
 		<?php astra_content_top(); ?>
+
+		<header id="masthead" class="site-header">
+        <div class="site-branding">
+            <!-- Logo går her -->
+            <img src="link-til-dit-logo.png" alt="Dit Logo">
+        </div>
+
+        <nav id="site-navigation" class="main-navigation">
+            <ul class="nav-menu">
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Shop All</a></li>
+                <li><a href="#">Rotate Party</a></li>
+                <li><a href="#">Rotate Sunday</a></li>
+                <li><a href="#">Rotate World</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-icons">
+            <!-- Loop ikon -->
+            <div class="icon"><i class="fas fa-sync"></i></div>
+            <!-- Hjerte ikon -->
+            <div class="icon"><i class="fas fa-heart"></i></div>
+            <!-- Kurv ikon -->
+            <div class="icon"><i class="fas fa-shopping-cart"></i></div>
+        </div>
+    </header>
+
+  </div><!-- .ast-container -->
+</div><!-- #content -->
+
