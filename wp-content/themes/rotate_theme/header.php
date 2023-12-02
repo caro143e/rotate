@@ -44,35 +44,41 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 		<?php echo esc_html( astra_default_strings( 'string-header-skip-link', false ) ); ?>
 </a>
 
-	<div id="content" class="site-content">
-		<div class="ast-container">
+<div id="content" class="site-content">
+	<div class="ast-container">
 		<?php astra_content_top(); ?>
 
-		<header id="head-primary" class="site-header">
+	<header id="head-primary" class="site-header">
 		<nav id="site-navigation" class="main-navigation">	
-        <div class="site-branding">
-            <!-- Logo går her -->
-			<img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/logo.svg" alt="Rotate logo">
-        </div>
-            <ul class="nav-menu">
-                <li><a href="https://loststudios.dk/kea/rotate/new-arrivals/">NEW ARRIVALS</a></li>
-                <li><a href="https://loststudios.dk/kea/rotate/shop/">SHOP ALL</a></li>
-                <li><a href="https://loststudios.dk/kea/rotate/rotate-party/">ROTATE PARTY</a></li>
-                <li><a href="https://loststudios.dk/kea/rotate/rotate-sunday/">ROTATE SUNDAY</a></li>
-                <li><a href="https://loststudios.dk/kea/rotate/rotate-world/">ROTATE WORLD</a></li>
-            </ul>
+        	<div class="site-branding">
+				<img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/logo.svg" alt="Rotate logo">
+       		</div>
+			<div> 
+				<ul class="nav-menu">
+                	<li><a href="https://loststudios.dk/kea/rotate/new-arrivals/">NEW ARRIVALS</a></li>
+               	 <li><a href="https://loststudios.dk/kea/rotate/shop/">SHOP ALL</a></li>
+                	<li><a href="https://loststudios.dk/kea/rotate/rotate-party/">ROTATE PARTY</a></li>
+                	<li><a href="https://loststudios.dk/kea/rotate/rotate-sunday/">ROTATE SUNDAY</a></li>
+                	<li><a href="https://loststudios.dk/kea/rotate/rotate-world/">ROTATE WORLD</a></li>
+           		 </ul>
+			</div>
+           
 			<div class="header-icons">
-            <!-- Loop ikon -->
-           <img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/loop_icon.svg" alt="Rotate logo">
-            <!-- Hjerte ikon -->
-            <img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/hjerte_icon.svg" alt="Rotate logo">
-            <!-- Kurv ikon -->
-           <img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/kurv_icon.svg" alt="Rotate logo">
-        </div>
+           		<div>
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/loop_icon.svg" alt="Rotate logo">
+		   		</div>
+		   		<div>
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/hjerte_icon.svg" alt="Rotate logo">
+				</div>
+				<div>
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/kurv_icon.svg" alt="Rotate logo">
+				</div>
+           
+           </div>
         </nav>
 
        
-    </header>
+   	 </header>
 
   </div><!-- .ast-container -->
 </div><!-- #content -->
