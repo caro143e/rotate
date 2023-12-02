@@ -8,12 +8,13 @@ get_header();
 
  
   <section class="cardcontainer"></section>  
-    <template>
+  <template>
         <article>
             <img src="" alt="">
-             <div>
+             <div class="indhold">
                  <p class="title"></p>
                  <p class="pris"></p>
+                 <div class="circle"></div>
              </div>
         </article>
     </template>

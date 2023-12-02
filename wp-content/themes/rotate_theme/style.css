@@ -180,6 +180,8 @@ Description: Stylish Child Theme based on Astra
   height: 16px;
   background-color: black;
   border-radius: 50%;
+  margin-top: 0px;
+  margin-bottom: 16px;
 }
   .banner {
     background-color: #313030;

@@ -1,15 +1,16 @@
 <?php
 get_header();
 ?>
-<template>
-    <article>
-        <img src="" alt="">
-            <div>
-                <p class="title"></p>
-                <p class="pris"></p>
-            </div>
-    </article>
-</template>
+ <template>
+        <article>
+            <img src="" alt="">
+             <div class="indhold">
+                 <p class="title"></p>
+                 <p class="pris"></p>
+                 <div class="circle"></div>
+             </div>
+        </article>
+    </template>
 
 <section id="primary" class="content-area">
     <main id="main" class="site-main">

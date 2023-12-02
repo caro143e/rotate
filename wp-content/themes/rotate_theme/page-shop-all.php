@@ -4,12 +4,13 @@ get_header();
  <main id="main" class="site-main">
     <h2>Shop</h2>
   <section class="cardcontainer"></section>  
-    <template>
+  <template>
         <article>
             <img src="" alt="">
-             <div>
+             <div class="indhold">
                  <p class="title"></p>
                  <p class="pris"></p>
+                 <div class="circle"></div>
              </div>
         </article>
     </template>
