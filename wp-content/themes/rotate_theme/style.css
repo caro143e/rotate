@@ -176,8 +176,8 @@ Description: Stylish Child Theme based on Astra
 }
 
 .circle {
-  width: 50px; /* Just an example size, adjust as needed */
-  height: 50px; /* Just an example size, adjust as needed */
+  width: 16px; 
+  height: 16px;
   background-color: black;
   border-radius: 50%;
 }
