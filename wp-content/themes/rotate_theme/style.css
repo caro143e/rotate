@@ -209,21 +209,30 @@ body {
 
 /* Header Styling */
 .site-header {
-  background-color: #fff; /* Tilpas farven efter behov */
- border-radius: solid 1px grey;
-  padding: 10px 20px;
+ border-bottom: solid 1px grey;
+  padding: 0px 20px;
+  width: 100%;
+  
 }
 
 /* Branding Styling */
 .site-branding img {
   max-width: 100%;
   height: auto;
+  width: 150px;
+}
+
+.site-branding {
+ display: flex;
+ align-items: center;
+ gap:32px;
 }
 
 /* Navigation Styling */
 .main-navigation {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .nav-menu {
@@ -232,6 +241,7 @@ body {
   padding: 0;
   display: flex;
   margin-left: auto; /* Flytter menuen til højre */
+  gap: 32px;
 }
 
 .nav-menu li {
@@ -244,6 +254,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 14px; /* Tilpas størrelsen efter behov */
+  cursor: pointer;
 }
 
 /* Header Icons Styling */
@@ -257,7 +268,7 @@ body {
 }
 
 .header-icons img {
-  max-width: 30px; /* Tilpas størrelsen efter behov */
+  max-width: 24px; /* Tilpas størrelsen efter behov */
 }
 
 /* Responsivitet */
@@ -280,3 +291,68 @@ body {
     margin-top: 10px;
   }
 }
+
+
+
+/*SEKUNDÆR HEADER*/
+/* Generel styling for hovednav og ikoner */
+.site-header,
+.site-header-secondary {
+    background-color: var(--Bg-Primary);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    position: relative;
+}
+
+.site-branding img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-icons div {
+    margin-right: 10px;
+}
+
+.header-icons img {
+    max-width: 30px;
+}
+
+/* Styling for den sekundære header */
+.site-header-secondary {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-bottom: solid 1px grey;
+  
+}
+
+.secondary-navigation {
+    display: flex;
+    justify-content: start;
+    padding: 10px 0;
+}
+
+.secondary-nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.secondary-nav-menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.secondary-nav-menu a {
+    text-decoration: none;
+    color: #595959;
+    font-size: 12px;
+}
+
+.secondary-nav-menu a:nth-child(1) {
+  font-size: 14px;
+  color: black;
+}
+

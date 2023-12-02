@@ -50,18 +50,20 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 
 	<header id="head-primary" class="site-header">
 		<nav id="site-navigation" class="main-navigation">	
+			
         	<div class="site-branding">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/logo.svg" alt="Rotate logo">
-       		</div>
-			<div> 
+			<a href="https://loststudios.dk/kea/rotate"><img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/logo.svg" alt="Rotate logo"></a>
+				<div> 
 				<ul class="nav-menu">
-                	<li><a href="https://loststudios.dk/kea/rotate/new-arrivals/">NEW ARRIVALS</a></li>
+                	<li><a>NEW ARRIVALS</a></li>
                	 <li><a href="https://loststudios.dk/kea/rotate/shop/">SHOP ALL</a></li>
                 	<li><a href="https://loststudios.dk/kea/rotate/rotate-party/">ROTATE PARTY</a></li>
                 	<li><a href="https://loststudios.dk/kea/rotate/rotate-sunday/">ROTATE SUNDAY</a></li>
                 	<li><a href="https://loststudios.dk/kea/rotate/rotate-world/">ROTATE WORLD</a></li>
            		 </ul>
 			</div>
+       		</div>
+			
            
 			<div class="header-icons">
            		<div>
@@ -73,13 +75,38 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 				<div>
 					<img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/kurv_icon.svg" alt="Rotate logo">
 				</div>
+				<div>
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/kurv_icon.svg" alt="Rotate logo">
+				</div>
            
            </div>
         </nav>
 
        
-   	 </header>
+   	 <header id="head-secondary" class="site-header-secondary">
+    <nav class="secondary-navigation">
+        <ul class="secondary-nav-menu">
+            <li><a href="https://loststudios.dk/kea/rotate/new-arrivals/">NEW ARRIVALS</a></li>
+            <li><a href="#">Dresses</a></li>
+            <li><a href="#">Skirts</a></li>
+			<li><a href="#">Jackets</a></li>
+			<li><a href="#">Shirts</a></li>
+            <!-- Tilføj flere kategorier efter behov -->
+        </ul>
+    </nav>
+</header>
+
 
   </div><!-- .ast-container -->
 </div><!-- #content -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+        $('#head-primary').click(function() {
+            $('#head-secondary').slideToggle();
+        });
+    });
+</script>
+
 
