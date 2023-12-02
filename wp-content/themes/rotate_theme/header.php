@@ -58,7 +58,7 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
             <ul class="nav-menu">
                 <li><a href="https://loststudios.dk/kea/rotate/new-arrivals/">New Arrivals</a></li>
                 <li><a href="https://loststudios.dk/kea/rotate/shop/">Shop All</a></li>
-                <li><a href="https://loststudios.dk/kea/rotate/rotate-party/"></a>ROTATE PARTY</li>
+                <li><a href="https://loststudios.dk/kea/rotate/rotate-party/">ROTATE PARTY</a></li>
                 <li><a href="https://loststudios.dk/kea/rotate/rotate-sunday/">Rotate Sunday</a></li>
                 <li><a href="https://loststudios.dk/kea/rotate/rotate-world/">Rotate World</a></li>
             </ul>
