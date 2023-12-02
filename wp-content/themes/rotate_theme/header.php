@@ -56,7 +56,7 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 
         <nav id="site-navigation" class="main-navigation">
             <ul class="nav-menu">
-                <li><a href="#">New Arrivals</a></li>
+                <li><a href="https://loststudios.dk/kea/rotate/new-arrivals/">New Arrivals</a></li>
                 <li><a href="#">Shop All</a></li>
                 <li><a href="#">Rotate Party</a></li>
                 <li><a href="#">Rotate Sunday</a></li>
