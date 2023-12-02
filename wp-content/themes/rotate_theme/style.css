@@ -213,8 +213,8 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #fff; /* Tilpas farven efter behov */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Skyggeeffekt, tilpas efter behov */
+  border-bottom: #3130309a;
+  width: 100%;
 }
 
 /* Branding Styling */
