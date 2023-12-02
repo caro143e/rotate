@@ -62,16 +62,17 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
                 <li><a href="https://loststudios.dk/kea/rotate/rotate-sunday/">ROTATE SUNDAY</a></li>
                 <li><a href="https://loststudios.dk/kea/rotate/rotate-world/">ROTATE WORLD</a></li>
             </ul>
+			<div class="header-icons">
+            <!-- Loop ikon -->
+           <img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/loop_icon.svg" alt="Rotate logo">
+            <!-- Hjerte ikon -->
+            <img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/hjerte_icon.svg" alt="Rotate logo">
+            <!-- Kurv ikon -->
+           <img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/kurv_icon.svg" alt="Rotate logo">
+        </div>
         </nav>
 
-        <div class="header-icons">
-            <!-- Loop ikon -->
-            <div class="icon"><img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/loop_icon.svg" alt="Rotate logo"></div>
-            <!-- Hjerte ikon -->
-            <div class="icon"><img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/hjerte_icon.svg" alt="Rotate logo"></div>
-            <!-- Kurv ikon -->
-            <div class="icon"><img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/kurv_icon.svg" alt="Rotate logo"></div>
-        </div>
+       
     </header>
 
   </div><!-- .ast-container -->
