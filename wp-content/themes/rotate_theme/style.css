@@ -209,12 +209,9 @@ body {
 
 /* Header Styling */
 .site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  border-bottom: solid 1px grey;
-  width: 100%;
+  background-color: #fff; /* Tilpas farven efter behov */
+ border-radius: solid 1px grey;
+  padding: 10px 20px;
 }
 
 /* Branding Styling */
@@ -234,6 +231,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  margin-left: auto; /* Flytter menuen til højre */
 }
 
 .nav-menu li {
@@ -249,24 +247,28 @@ body {
 }
 
 /* Header Icons Styling */
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.header-icons div {
+  margin-right: 10px;
+}
+
 .header-icons img {
   max-width: 30px; /* Tilpas størrelsen efter behov */
-  margin-left: 20px;
 }
 
 /* Responsivitet */
 @media screen and (max-width: 768px) {
   .site-header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .main-navigation {
-    margin-top: 20px;
+    padding: 10px;
   }
 
   .nav-menu {
     flex-direction: column;
+    margin-left: 0;
   }
 
   .nav-menu li {
@@ -274,12 +276,7 @@ body {
     margin-bottom: 10px;
   }
 
-  .header-icons img {
-    margin-left: 0;
+  .header-icons {
     margin-top: 10px;
   }
 }
-
-
-
-
