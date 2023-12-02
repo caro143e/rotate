@@ -66,11 +66,11 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 
         <div class="header-icons">
             <!-- Loop ikon -->
-            <div class="icon"><img src="/pictures/loop_icon.svg" alt="Rotate logo"></div>
+            <div class="icon"><img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/loop_icon.svg" alt="Rotate logo"></div>
             <!-- Hjerte ikon -->
-            <div class="icon"><img src="/pictures/hjerte_icon.svg" alt="Rotate logo"></div>
+            <div class="icon"><img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/hjerte_icon.svg" alt="Rotate logo"></div>
             <!-- Kurv ikon -->
-            <div class="icon"><img src="/pictures/kurv_icon.svg" alt="Rotate logo"></div>
+            <div class="icon"><img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/kurv_icon.svg" alt="Rotate logo"></div>
         </div>
     </header>
 
