@@ -299,8 +299,8 @@ body {
 .site-header,
 .site-header-secondary {
     background-color: var(--Bg-Primary);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
+    border-bottom: solid 1px lightgray;
+    padding: 10px 0px;
     position: relative;
 }
 
@@ -318,41 +318,34 @@ body {
 }
 
 /* Styling for den sekundære header */
-.site-header-secondary {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    border-bottom: solid 1px grey;
-  
+
+#menu-item-71 .sub-menu {
+  display: flex;
+  flex-direction: row; /* Vis undermenuen som en kolonne */
+  background-color: var(--Bg-Primary);
+  position: absolute;
+  left: 0; /* Placer menuen helt til venstre */
+  width: 100vw; /* Gør bredden lig med parent containerens bredde */
+  z-index: 1; /* Sørg for, at menuen vises over andre elementer, om nødvendigt */
+  top: 100%; /* Placer menuen under hovedmenuen */
+  margin-left: 0;
 }
 
-.secondary-navigation {
-    display: flex;
-    justify-content: start;
-    padding: 10px 0;
+.menu-link {
+  position: static;
 }
 
-.secondary-nav-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+#menu-item-71 {
+  position: static;
 }
 
-.secondary-nav-menu li {
-    display: inline-block;
-    margin-right: 20px;
+.main-header-menu {
+  position: static !important;
 }
 
-.secondary-nav-menu a {
-    text-decoration: none;
-    color: #595959;
-    font-size: 12px;
+.main-navigation {
+  position: static;
 }
 
-.secondary-nav-menu a:nth-child(1) {
-  font-size: 14px;
-  color: black;
-}
+
 
