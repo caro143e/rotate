@@ -7,7 +7,7 @@ get_header();
     <template>
         <article>
             <img src="" alt="">
-             <div>
+             <div class="indhold">
                  <p class="title"></p>
                  <p class="pris"></p>
                  <div class="circle"></div>

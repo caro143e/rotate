@@ -160,7 +160,7 @@ Description: Stylish Child Theme based on Astra
     border: solid 2px black;
   }
 
-.cardcontainer article div {
+.cardcontainer article .indhold {
   margin-right: 16px;
   margin-left: 16px;
 }
