@@ -10,6 +10,7 @@ get_header();
              <div>
                  <p class="title"></p>
                  <p class="pris"></p>
+                 <div class="circle"></div>
              </div>
         </article>
     </template>

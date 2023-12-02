@@ -144,6 +144,8 @@ Description: Stylish Child Theme based on Astra
     font-weight: var(--regular);
 }
 
+/*STYLING AF CARDS*/
+
 .cardcontainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -157,6 +159,28 @@ Description: Stylish Child Theme based on Astra
 .cardcontainer article:hover {
     border: solid 2px black;
   }
+
+.cardcontainer article div {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.cardcontainer article .title {
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+.cardcontainer article .pris {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.circle {
+  width: 50px; /* Just an example size, adjust as needed */
+  height: 50px; /* Just an example size, adjust as needed */
+  background-color: black;
+  border-radius: 50%;
+}
   .banner {
     background-color: #313030;
     position: relative;
