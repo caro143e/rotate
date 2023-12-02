@@ -49,12 +49,11 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 		<?php astra_content_top(); ?>
 
 		<header id="head-primary" class="site-header">
+		<nav id="site-navigation" class="main-navigation">	
         <div class="site-branding">
             <!-- Logo går her -->
 			<img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/logo.svg" alt="Rotate logo">
         </div>
-
-        <nav id="site-navigation" class="main-navigation">
             <ul class="nav-menu">
                 <li><a href="https://loststudios.dk/kea/rotate/new-arrivals/">NEW ARRIVALS</a></li>
                 <li><a href="https://loststudios.dk/kea/rotate/shop/">SHOP ALL</a></li>
