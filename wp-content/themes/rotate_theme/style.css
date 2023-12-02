@@ -150,6 +150,8 @@ Description: Stylish Child Theme based on Astra
   width: 100%;
   max-width: 2000px;
   margin: 0 auto;
+  cursor: pointer;
+  
   }
   
 .cardcontainer article:hover {
