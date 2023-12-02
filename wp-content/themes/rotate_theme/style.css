@@ -157,7 +157,7 @@ Description: Stylish Child Theme based on Astra
   }
   
 .cardcontainer article:hover {
-    border: solid 2px black;
+    border: solid 1px black;
   }
 
 .cardcontainer article .indhold {

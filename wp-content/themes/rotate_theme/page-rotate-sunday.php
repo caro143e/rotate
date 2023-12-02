@@ -2,7 +2,6 @@
 get_header();
 ?>
  <main id="main" class="site-main">
-    <h2>Rotate sunday</h2>
   <section class="cardcontainer"></section>  
     <template>
         <article>
