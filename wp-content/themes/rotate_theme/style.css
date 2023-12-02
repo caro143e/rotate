@@ -205,3 +205,81 @@ body {
 
 
 
+/*STYLING AF HEADER*/
+
+/* Header Styling */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff; /* Tilpas farven efter behov */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Skyggeeffekt, tilpas efter behov */
+}
+
+/* Branding Styling */
+.site-branding img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navigation Styling */
+.main-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-menu li {
+  margin-right: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333; /* Tilpas farven efter behov */
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px; /* Tilpas størrelsen efter behov */
+}
+
+/* Header Icons Styling */
+.header-icons img {
+  max-width: 30px; /* Tilpas størrelsen efter behov */
+  margin-left: 20px;
+}
+
+/* Responsivitet */
+@media screen and (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-navigation {
+    margin-top: 20px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+  }
+
+  .nav-menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .header-icons img {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+
+
+
