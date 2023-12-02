@@ -44,26 +44,6 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 		<?php echo esc_html( astra_default_strings( 'string-header-skip-link', false ) ); ?>
 </a>
 
-<div
-<?php
-	echo astra_attr(
-		'site',
-		array(
-			'id'    => 'page',
-			'class' => 'hfeed site',
-		)
-	);
-	?>
->
-	<?php
-	astra_header_before();
-
-	astra_header();
-
-	astra_header_after();
-
-	astra_content_before();
-	?>
 	<div id="content" class="site-content">
 		<div class="ast-container">
 		<?php astra_content_top(); ?>
