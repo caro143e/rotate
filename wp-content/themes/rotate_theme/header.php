@@ -48,7 +48,7 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 		<div class="ast-container">
 		<?php astra_content_top(); ?>
 
-		<header id="masthead" class="site-header">
+		<header id="head-primary" class="site-header">
         <div class="site-branding">
             <!-- Logo går her -->
 			<img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/logo.svg" alt="Rotate logo">
@@ -56,21 +56,21 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 
         <nav id="site-navigation" class="main-navigation">
             <ul class="nav-menu">
-                <li><a href="https://loststudios.dk/kea/rotate/new-arrivals/">New Arrivals</a></li>
-                <li><a href="https://loststudios.dk/kea/rotate/shop/">Shop All</a></li>
+                <li><a href="https://loststudios.dk/kea/rotate/new-arrivals/">NEW ARRIVALS</a></li>
+                <li><a href="https://loststudios.dk/kea/rotate/shop/">SHOP ALL</a></li>
                 <li><a href="https://loststudios.dk/kea/rotate/rotate-party/">ROTATE PARTY</a></li>
-                <li><a href="https://loststudios.dk/kea/rotate/rotate-sunday/">Rotate Sunday</a></li>
-                <li><a href="https://loststudios.dk/kea/rotate/rotate-world/">Rotate World</a></li>
+                <li><a href="https://loststudios.dk/kea/rotate/rotate-sunday/">ROTATE SUNDAY</a></li>
+                <li><a href="https://loststudios.dk/kea/rotate/rotate-world/">ROTATE WORLD</a></li>
             </ul>
         </nav>
 
         <div class="header-icons">
             <!-- Loop ikon -->
-            <div class="icon"><i class="fas fa-sync"></i></div>
+            <div class="icon"><img src="/pictures/loop_icon.svg" alt="Rotate logo"></div>
             <!-- Hjerte ikon -->
-            <div class="icon"><i class="fas fa-heart"></i></div>
+            <div class="icon"><img src="/pictures/hjerte_icon.svg" alt="Rotate logo"></div>
             <!-- Kurv ikon -->
-            <div class="icon"><i class="fas fa-shopping-cart"></i></div>
+            <div class="icon"><img src="/pictures/kurv_icon.svg" alt="Rotate logo"></div>
         </div>
     </header>
 
