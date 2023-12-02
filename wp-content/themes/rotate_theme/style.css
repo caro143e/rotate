@@ -148,7 +148,7 @@ Description: Stylish Child Theme based on Astra
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
-  max-width: 1500px;
+  max-width: 2000px;
   margin: 0 auto;
   }
   
