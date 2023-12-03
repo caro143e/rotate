@@ -39,7 +39,7 @@ get_header();
                 klon.querySelector(".title").textContent = shop.title.rendered;
                 klon.querySelector("img").src = shop.produktbillede.guid;
                 klon.querySelector(".pris").textContent = shop.pris;
-
+                klon.querySelector("article").addEventListener("click", ()=> {location.href = shop.link; })
                 container.appendChild(klon);
 
             })

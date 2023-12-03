@@ -38,7 +38,7 @@ get_header();
                 klon.querySelector(".title").textContent = sunday.title.rendered;
                 klon.querySelector("img").src = sunday.produktbillede.guid;
                 klon.querySelector(".pris").textContent = sunday.pris;
-
+                klon.querySelector("article").addEventListener("click", ()=> {location.href = sunday.link; })
                 container.appendChild(klon);
 
             })
