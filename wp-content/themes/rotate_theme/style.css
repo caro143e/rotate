@@ -370,6 +370,41 @@ body {
   height: 80px;
 }
 
+#menu-item-69 {
+  position: static;
+}
+
+#menu-item-69 .sub-menu {
+  display: flex;
+  flex-direction: row; /* Vis undermenuen som en kolonne */
+  background-color: var(--Bg-Primary);
+  position: absolute;
+  left: 0; /* Placer menuen helt til venstre */
+  width: 100vw; /* Gør bredden lig med parent containerens bredde */
+  z-index: 1; /* Sørg for, at menuen vises over andre elementer, om nødvendigt */
+  top: 100%; /* Placer menuen under hovedmenuen */
+  margin-left: 0;
+  height: 80px;
+}
+
+#menu-item-68 {
+  position: static;
+}
+
+#menu-item-68 .sub-menu {
+  display: flex;
+  flex-direction: row; /* Vis undermenuen som en kolonne */
+  background-color: var(--Bg-Primary);
+  position: absolute;
+  left: 0; /* Placer menuen helt til venstre */
+  width: 100vw; /* Gør bredden lig med parent containerens bredde */
+  z-index: 1; /* Sørg for, at menuen vises over andre elementer, om nødvendigt */
+  top: 100%; /* Placer menuen under hovedmenuen */
+  margin-left: 0;
+  height: 80px;
+}
+
+
 
 
 
