@@ -153,6 +153,7 @@ Description: Stylish Child Theme based on Astra
   max-width: 2000px;
   margin: 0 auto;
   cursor: pointer;
+  margin-top: 64px;
   
   }
   
@@ -354,7 +355,7 @@ body {
   z-index: 1; /* Sørg for, at menuen vises over andre elementer, om nødvendigt */
   top: 100%; /* Placer menuen under hovedmenuen */
   margin-left: 0;
-  height: 80px;
+  height: 60px;
   font-weight: 400;
   color: #313030;
 }
@@ -369,6 +370,16 @@ body {
 .sub-menu li:hover {
   text-decoration: solid 1px black underline;
 }
+
+.ast-builder-grid-row {
+  height: 60px !important;
+}
+.main-header-bar {
+ background-color: var(--Bg-Primary);
+}
+
+
+
 
 
 
