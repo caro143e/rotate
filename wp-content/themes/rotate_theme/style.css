@@ -181,10 +181,10 @@ Description: Stylish Child Theme based on Astra
 .circle {
   width: 8px; 
   height: 8px;
-  background-color: black;
   border-radius: 50%;
   margin-top: 0px;
   margin-bottom: 16px;
+  border: solid 1px black;
 }
   .banner {
     background-color: #313030;
@@ -193,18 +193,7 @@ Description: Stylish Child Theme based on Astra
     padding-inline: 256px;
 }
 
-/* Importér fonten i din CSS-fil */
-@font-face {
-  font-family: 'Druk'; /* Erstat med det ønskede navn */
-  src: url('sti/til/din/font.woff2') format('woff2'), /* Tilføj alle nødvendige formater */
-       url('sti/til/din/font.woff') format('woff');
-  /* Gentag dette for andre formater, hvis nødvendigt */
-}
 
-/* Brug din font på ønskede elementer */
-body {
-  font-family: 'Druk', sans-serif;
-}
 
 
 
@@ -393,11 +382,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 12.8px;
 }
 .size_flexbox_2 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 32px;
+  cursor: pointer;
 }
 
 .circle_singleview {
@@ -405,10 +396,57 @@ body {
   height: 16px;
   border-radius: 50%;
   margin-top: 0px;
-  margin-bottom: 16px;
-  border: solid 2px black;
+  margin-bottom: 48px;
+  border: solid 1px black;
+}
+.container_2 .title {
+  margin-top: 32px;
+  font-size: 25px; /* Vi skal have variabler på i stedet */
+  font-weight: bold; /* Vi skal have variabler på i stedet */
 }
 
+.container_2 .pris {
+  margin-top: 8px;
+  font-size: 20px; /* Vi skal have variabler på i stedet */
+}
+
+.lige-streg {
+  width: 100%; /* Bredden af stregen */
+  height: 1px; /* Højden af stregen */
+  background-color: lightgray; /* Farven af stregen */
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.container_2 .farve {
+  margin-top: 8px;
+  margin-bottom: 0px;
+  font-size: 16px; /* Vi skal have variabler på i stedet */
+}
+
+
+.size_flexbox_1 .guide{
+  font-weight: bold;
+  text-decoration: underline 1px solid black;
+}
+.button_box button {
+  width: 100%;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  margin-bottom: 32px;
+}
+
+.details {
+  text-decoration: underline 1px solid black;
+  margin-bottom: 16px;
+  font-size: 12.8px;
+}
+
+.shipping {
+  text-decoration: underline 1px solid black;
+  margin-bottom: 16px;
+  font-size: 12.8px;
+}
 
 
 

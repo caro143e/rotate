@@ -40,13 +40,15 @@ get_header();
       <div class="container_2"> 
         <h2 class="title"></h2>
         <h3 class="pris"></h3>
+        <div class="lige-streg"></div>
         <p class="farve">COLOUR: </p>
         <div class="circle_singleview"></div>
+       
 
 
         <div class="size_flexbox_1"> 
-            <p>SELECT SIZE</p>
-            <p>SIZE GUIDE</p>
+            <p class="select">SELECT SIZE (EU)</p>
+            <p class="guide">SIZE GUIDE</p>
         </div>
 
         <div class="size_flexbox_2"> 

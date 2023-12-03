@@ -37,6 +37,7 @@ get_header();
                 klon.querySelector(".title").textContent = news.title.rendered;
                 klon.querySelector("img").src = news.produktbillede[0].guid;
                 klon.querySelector(".pris").textContent = news.prisdk;
+                klon.querySelector(".circle").style.backgroundColor = news.farve; 
                 klon.querySelector("article").addEventListener("mouseover", (event) => {
                 event.currentTarget.querySelector("img").src = news.produktbillede[1].guid;
                 }); /*her siger jeg at når vi hover hen over artcilen (card) skal billedet ændre sig til news.produktbillede[1].guid, dette er billede nr 2 i JSON*/
