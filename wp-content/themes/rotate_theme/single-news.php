@@ -6,7 +6,36 @@ get_header();
  
       <article class="single-view">   <!-- Dette er html skelettet til produktet -->
       <div class="container_1"> 
-            <img class="pic" src="" alt="">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img class="pic" src="" alt="" >
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img class="pic_2" src="" alt="">
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img class="pic_3" src="" alt="">
+            </div>
+
+            <!-- Next og previous knapper-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!--  dots/circles -->
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+           
       </div>
       <div class="container_2"> 
         <h2 class="title"></h2>
@@ -52,14 +81,47 @@ get_header();
         }
 
         function visNews() { /* Starter en funktion "visNews" for at opdatere HTML-elementerne med data om produktet */
-          
+                console.log(news)
                 document.querySelector(".title").textContent = news.title.rendered;   /* Opdaterer titlen med produktets titel. */
-                document.querySelector(".pic").src = news.produktbillede.guid; /* Opdaterer billedets kilde med produktets billede. */
-                document.querySelector(".pris").textContent = news.pris; /* Opdaterer prisen med produktets pris. */
-                document.querySelector(".farve").textContent = document.querySelector(".farve").textContent.concat(news.farve);/* concat sættes, så den tilføjer hvad der står i html'et merger det */
+                document.querySelector(".pic").src = news.produktbillede[0].guid; /* Opdaterer billedets kilde med produktets billede. */
+                document.querySelector(".pic_2").src = news.produktbillede[1].guid; /* Opdaterer billedets kilde med produktets billede. */
+                document.querySelector(".pic_3").src = news.produktbillede[2].guid; /* Opdaterer billedets kilde med produktets billede. */
+                document.querySelector(".pris").textContent = news.prisdk; /* Opdaterer prisen med produktets pris. */
+                document.querySelector(".farve").textContent = document.querySelector(".farve").textContent.concat(news.color); /* concat sættes, så den tilføjer hvad der står i html'et merger det */
                 document.querySelector(".circle_singleview").style.backgroundColor = news.farve; 
 
             }
+
+
+        
+            let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
         
 
     
