@@ -39,11 +39,11 @@ get_header();
                 klon.querySelector(".pris").textContent = news.pris;
                 klon.querySelector("article").addEventListener("mouseover", (event) => {
                 event.currentTarget.querySelector("img").src = news.produktbillede[1].guid;
-                });
+                }); /*her siger jeg at når vi hover hen over artcilen (card) skal billedet ændre sig til news.produktbillede[1].guid, dette er billede nr 2 i JSON*/
 
                 klon.querySelector("article").addEventListener("mouseout", (event) => {
                 event.currentTarget.querySelector("img").src = news.produktbillede[0].guid;
-                });
+                }); /*her siger så at når vi hover væk fra articlen podukt(card)over billedet skal billedet gå tilbage til det originale altsp news.produktbillede[0].guid, dette er billede nr 1 i JSON*/
 
                 klon.querySelector("article").addEventListener("click", ()=> {location.href = news.link; })
                 container.appendChild(klon);
