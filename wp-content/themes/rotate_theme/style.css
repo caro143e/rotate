@@ -215,6 +215,7 @@ body {
   padding: 0px 20px;
   width: 100%;
   height: 50px;
+  font-weight: bold;
   
 }
 
@@ -320,89 +321,55 @@ body {
     max-width: 30px;
 }
 
-/* Styling for den sekundære header */
-
-#menu-item-71 .sub-menu {
-  display: flex;
-  flex-direction: row; /* Vis undermenuen som en kolonne */
-  background-color: var(--Bg-Primary);
-  position: absolute;
-  left: 0; /* Placer menuen helt til venstre */
-  width: 100vw; /* Gør bredden lig med parent containerens bredde */
-  z-index: 1; /* Sørg for, at menuen vises over andre elementer, om nødvendigt */
-  top: 100%; /* Placer menuen under hovedmenuen */
-  margin-left: 0;
-  height: 80px;
-}
+/* ALT STYLING TIL DEN SEKUNDÆRE MENU */
 
 .menu-link {
   position: static;
-}
-
-#menu-item-71 {
-  position: static;
+  
 }
 
 .main-header-menu {
   position: static !important;
   font-size: var(--fontSize-navigation);
-  font-weight: bold;
+  
 }
 
 .main-navigation {
   position: static;
 }
 
-#menu-item-294 {
+#menu-item-68, #menu-item-69, #menu-item-294, #menu-item-71 {
   position: static;
 }
 
-#menu-item-294 .sub-menu {
+/*styling af submenuen*/
+#menu-item-68 .sub-menu, #menu-item-69 .sub-menu, #menu-item-294 .sub-menu, #menu-item-71 .sub-menu  {
   display: flex;
   flex-direction: row; /* Vis undermenuen som en kolonne */
   background-color: var(--Bg-Primary);
   position: absolute;
+  gap: 8px;
   left: 0; /* Placer menuen helt til venstre */
   width: 100vw; /* Gør bredden lig med parent containerens bredde */
   z-index: 1; /* Sørg for, at menuen vises over andre elementer, om nødvendigt */
   top: 100%; /* Placer menuen under hovedmenuen */
   margin-left: 0;
   height: 80px;
+  font-weight: 400;
+  color: #313030;
 }
 
-#menu-item-69 {
-  position: static;
+/*styling af det første ord i sub menu*/
+#menu-item-510, #menu-item-509, #menu-item-478, #menu-item-502 {
+  font-weight: bold;
+  color: #212121;
+  margin-right: 16px;
 }
 
-#menu-item-69 .sub-menu {
-  display: flex;
-  flex-direction: row; /* Vis undermenuen som en kolonne */
-  background-color: var(--Bg-Primary);
-  position: absolute;
-  left: 0; /* Placer menuen helt til venstre */
-  width: 100vw; /* Gør bredden lig med parent containerens bredde */
-  z-index: 1; /* Sørg for, at menuen vises over andre elementer, om nødvendigt */
-  top: 100%; /* Placer menuen under hovedmenuen */
-  margin-left: 0;
-  height: 80px;
+.sub-menu li:hover {
+  text-decoration: solid 1px black underline;
 }
 
-#menu-item-68 {
-  position: static;
-}
-
-#menu-item-68 .sub-menu {
-  display: flex;
-  flex-direction: row; /* Vis undermenuen som en kolonne */
-  background-color: var(--Bg-Primary);
-  position: absolute;
-  left: 0; /* Placer menuen helt til venstre */
-  width: 100vw; /* Gør bredden lig med parent containerens bredde */
-  z-index: 1; /* Sørg for, at menuen vises over andre elementer, om nødvendigt */
-  top: 100%; /* Placer menuen under hovedmenuen */
-  margin-left: 0;
-  height: 80px;
-}
 
 
 
