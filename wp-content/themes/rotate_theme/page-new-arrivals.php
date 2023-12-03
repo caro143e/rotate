@@ -9,6 +9,7 @@ get_header();
                  <p class="pris"></p>
                  <div class="circle"></div>
              </div>
+             
         </article>
     </template>
 
@@ -34,13 +35,23 @@ get_header();
             news.forEach(news => {
                 let klon = temp.cloneNode(true).content;
                 klon.querySelector(".title").textContent = news.title.rendered;
-                klon.querySelector("img").src = news.produktbillede.guid;
+                klon.querySelector("img").src = news.produktbillede[0].guid;
                 klon.querySelector(".pris").textContent = news.pris;
+                klon.querySelector("article").addEventListener("mouseover", (event) => {
+                event.currentTarget.querySelector("img").src = news.produktbillede[1].guid;
+                });
+
+                klon.querySelector("article").addEventListener("mouseout", (event) => {
+                event.currentTarget.querySelector("img").src = news.produktbillede[0].guid;
+                });
+
                 klon.querySelector("article").addEventListener("click", ()=> {location.href = news.link; })
                 container.appendChild(klon);
 
             })
         }
+
+        
 
     
 

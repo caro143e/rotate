@@ -11,8 +11,8 @@ get_header();
       <div class="container_2"> 
         <h2 class="title"></h2>
         <h3 class="pris"></h3>
-        <p class="farve">COLOUR:</p>
-        <div class="circle"></div>
+        <p class="farve">COLOUR: </p>
+        <div class="circle_singleview"></div>
 
 
         <div class="size_flexbox_1"> 
@@ -56,7 +56,8 @@ get_header();
                 document.querySelector(".title").textContent = news.title.rendered;   /* Opdaterer titlen med produktets titel. */
                 document.querySelector(".pic").src = news.produktbillede.guid; /* Opdaterer billedets kilde med produktets billede. */
                 document.querySelector(".pris").textContent = news.pris; /* Opdaterer prisen med produktets pris. */
-                document.querySelector(".farve").textContent = news.farve; /* Opdaterer prisen med produktets farve. */
+                document.querySelector(".farve").textContent = document.querySelector(".farve").textContent.concat(news.farve);/* concat sættes, så den tilføjer hvad der står i html'et merger det */
+                document.querySelector(".circle_singleview").style.backgroundColor = news.farve; 
 
             }
         
