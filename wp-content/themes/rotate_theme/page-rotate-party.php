@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
- <main id="main" class="site-main">
+ 
     <div class="banner">
         <img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/rotate.svg" alt="Rotate logo">
     </div>
@@ -21,7 +21,8 @@ get_header();
 
 <section id="primary" class="content-area">
    
-        
+    <main id="main" class="site-main">   
+        <section class="cardcontainer"></section>
     </main>
 
     <script>
@@ -43,10 +44,21 @@ get_header();
                 klon.querySelector(".title").textContent = party.title.rendered;
                 klon.querySelector("img").src = party.produktbillede.guid;
                 klon.querySelector(".pris").textContent = party.pris;
-                klon.querySelector("article").addEventListener("click", ()=> {location.href = party.link; })
+                klon.querySelector(".circle").style.backgroundColor = partys.farve; 
+                klon.querySelector("article").addEventListener("mouseover", (event) => {
+                event.currentTarget.querySelector("img").src = partys.produktbillede[1].guid;
+
+             });
+
+              klon.querySelector("article").addEventListener("mouseout", (event) => {
+                event.currentTarget.querySelector("img").src = partys.produktbillede[0].guid;
+                }); /*her siger så at når vi hover væk fra articlen podukt(card)over billedet skal billedet gå tilbage til det originale altsp news.produktbillede[0].guid, dette er billede nr 1 i JSON*/
+
+                klon.querySelector("article").addEventListener("click", ()=> {location.href = partys.link; })
                 container.appendChild(klon);
 
-            })
+         })
+        
         }
 
     
