@@ -27,7 +27,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 		
 	astra_footer_after(); 
 ?>
-	</div>
+<div class="footer-logo">
+    ROTATE
+</div>
+</div>
+	
     
 <?php 
 	astra_body_bottom();    

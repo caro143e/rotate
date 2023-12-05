@@ -6,6 +6,14 @@ Version: 1.0.0
 Description: Stylish Child Theme based on Astra
 */
 
+@font-face {
+  font-family: "drunk";
+  src: url("fonts/Druk-Bold-Trial.otf") format("otf"),
+    url("fonts/Druk-Super-Trial.otf") format("oft");
+  /* Add more src lines if you have different font file formats */
+  font-weight: normal;
+  font-style: normal;
+}
 .card {
   font-family: var(--fontFamiliesFontSans);
   cursor: pointer;
@@ -521,4 +529,11 @@ Description: Stylish Child Theme based on Astra
   to {
     opacity: 1;
   }
+}
+.footer-logo {
+  text-align: center;
+  margin-top: 300px;
+  font-size: 3rem;
+  font-family: "drunk";
+  font-weight: bold;
 }
