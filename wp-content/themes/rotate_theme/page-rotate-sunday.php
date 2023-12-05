@@ -1,9 +1,7 @@
 <?php
 get_header();
 ?>
- <main id="main" class="site-main">
-  <section class="cardcontainer"></section>  
-    <template>
+ <template>
         <article>
             <img src="" alt="">
              <div class="indhold">
@@ -14,9 +12,10 @@ get_header();
         </article>
     </template>
 
+
 <section id="primary" class="content-area">
-   
-        
+   <main id="main" class="site-main">
+     <section class="cardcontainer"></section> 
     </main>
 
     <script>
@@ -33,12 +32,20 @@ get_header();
         function visSundays() {
             let temp = document.querySelector("template");
             let container = document.querySelector(".cardcontainer")
-            sundays.forEach(sunday => {
+            sundays.forEach(sundays => {
                 let klon = temp.cloneNode(true).content;
-                klon.querySelector(".title").textContent = sunday.title.rendered;
-                klon.querySelector("img").src = sunday.produktbillede.guid;
-                klon.querySelector(".pris").textContent = sunday.pris;
-                klon.querySelector("article").addEventListener("click", ()=> {location.href = sunday.link; })
+                klon.querySelector(".title").textContent = sundays.title.rendered;
+                klon.querySelector("img").src = sundays.produktbillede.guid;
+                klon.querySelector(".pris").textContent = sundays.prisdk;
+                klon.querySelector(".circle").style.backgroundColor = sundays.farve; 
+                klon.querySelector("article").addEventListener("mouseover", (event) => {
+                event.currentTarget.querySelector("img").src = sundays.produktbillede[1].guid;
+                });
+                klon.querySelector("article").addEventListener("mouseout", (event) => {
+                event.currentTarget.querySelector("img").src = sundays.produktbillede[0].guid;
+                }); /*her siger så at når vi hover væk fra articlen podukt(card)over billedet skal billedet gå tilbage til det originale altsp news.produktbillede[0].guid, dette er billede nr 1 i JSON*/
+
+                klon.querySelector("article").addEventListener("click", ()=> {location.href = sundays.link; })
                 container.appendChild(klon);
 
             })
