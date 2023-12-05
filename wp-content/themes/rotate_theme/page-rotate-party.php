@@ -5,10 +5,7 @@ get_header();
     <div class="banner">
         <img src="<?php echo get_stylesheet_directory_uri() ?>/pictures/rotate.svg" alt="Rotate logo">
     </div>
-
- 
-  <section class="cardcontainer"></section>  
-  <template>
+ <template>
         <article>
             <img src="" alt="">
              <div class="indhold">
@@ -39,11 +36,11 @@ get_header();
         function visPartys() {
             let temp = document.querySelector("template");
             let container = document.querySelector(".cardcontainer")
-            partys.forEach(party => {
+            partys.forEach(partys => {
                 let klon = temp.cloneNode(true).content;
-                klon.querySelector(".title").textContent = party.title.rendered;
-                klon.querySelector("img").src = party.produktbillede.guid;
-                klon.querySelector(".pris").textContent = party.pris;
+                klon.querySelector(".title").textContent = partys.title.rendered;
+                klon.querySelector("img").src = partys.produktbillede.guid;
+                klon.querySelector(".pris").textContent = partys.pris;
                 klon.querySelector(".circle").style.backgroundColor = partys.farve; 
                 klon.querySelector("article").addEventListener("mouseover", (event) => {
                 event.currentTarget.querySelector("img").src = partys.produktbillede[1].guid;
