@@ -38,7 +38,7 @@ get_header();
                 let klon = temp.cloneNode(true).content;
                 klon.querySelector(".title").textContent = partys.title.rendered;
                 klon.querySelector("img").src = partys.produktbillede.guid;
-                klon.querySelector(".pris").textContent = partys.pris;
+                klon.querySelector(".pris").textContent = partys.prisdk;
                 klon.querySelector(".circle").style.backgroundColor = partys.farve; 
                 klon.querySelector("article").addEventListener("mouseover", (event) => {
                 event.currentTarget.querySelector("img").src = partys.produktbillede[1].guid;
