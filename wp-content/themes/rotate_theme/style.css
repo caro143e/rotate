@@ -11,7 +11,7 @@ Description: Stylish Child Theme based on Astra
   src: url("fonts/Druk-Bold-Trial.otf") format("otf"),
     url("fonts/Druk-Super-Trial.otf") format("oft");
   /* Add more src lines if you have different font file formats */
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
 }
 .card {
@@ -529,11 +529,4 @@ Description: Stylish Child Theme based on Astra
   to {
     opacity: 1;
   }
-}
-.footer-logo {
-  text-align: center;
-  margin-top: 300px;
-  font-size: 3rem;
-  font-family: "drunk";
-  font-weight: bold;
 }
