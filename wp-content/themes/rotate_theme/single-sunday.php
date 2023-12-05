@@ -79,7 +79,7 @@ get_header();
             const data = await fetch(dbUrl);
             sundays = await data.json();
             console.log(sundays);
-            visSundays();
+            visSunday();
         }
 
         function visSunday() {

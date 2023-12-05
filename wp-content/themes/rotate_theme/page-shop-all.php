@@ -1,10 +1,7 @@
 <?php
 get_header();
 ?>
- <main id="main" class="site-main">
-    <h2>Shop</h2>
-  <section class="cardcontainer"></section>  
-  <template>
+<template>
         <article>
             <img src="" alt="">
              <div class="indhold">
@@ -16,9 +13,12 @@ get_header();
     </template>
 
 <section id="primary" class="content-area">
-   
-        
-    </main>
+
+ <main id="main" class="site-main">
+    <h3>Shop</h3>
+    <section class="cardcontainer"></section>  
+ 
+  </main>
 
     <script>
         let shops;
@@ -34,13 +34,23 @@ get_header();
         function visShops() {
             let temp = document.querySelector("template");
             let container = document.querySelector(".cardcontainer")
-            shops.forEach(shop => {
+            shops.forEach(shops => {
                 let klon = temp.cloneNode(true).content;
-                klon.querySelector(".title").textContent = shop.title.rendered;
-                klon.querySelector("img").src = shop.produktbillede.guid;
-                klon.querySelector(".pris").textContent = shop.pris;
-                klon.querySelector("article").addEventListener("click", ()=> {location.href = shop.link; })
+                klon.querySelector(".title").textContent = shops.title.rendered;
+                klon.querySelector("img").src = shops.produktbillede.guid;
+                klon.querySelector(".pris").textContent = shops.prisdk;
+                klon.querySelector(".circle").style.backgroundColor = shops.farve; 
+                klon.querySelector("article").addEventListener("mouseover", (event) => {
+                event.currentTarget.querySelector("img").src = shops.produktbillede[1].guid;
+             });
+
+             klon.querySelector("article").addEventListener("mouseout", (event) => {
+                event.currentTarget.querySelector("img").src = shops.produktbillede[0].guid;
+                }); /*her siger så at når vi hover væk fra articlen podukt(card)over billedet skal billedet gå tilbage til det originale altsp news.produktbillede[0].guid, dette er billede nr 1 i JSON*/
+
+                klon.querySelector("article").addEventListener("click", ()=> {location.href = shops.link; })
                 container.appendChild(klon);
+
 
             })
         }
