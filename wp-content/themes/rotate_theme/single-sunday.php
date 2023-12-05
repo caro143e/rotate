@@ -5,7 +5,7 @@ get_header();
    <main id="main" class="site-main"> 
  
         <article class="single-view">   <!-- Dette er html skelettet til produktet -->
-      <div class="container_1"> 
+         <div class="container_1"> 
             <!-- Slideshow container -->
             <div class="slideshow-container">
             <div class="mySlides fade">
@@ -83,7 +83,7 @@ get_header();
         }
 
         function visSundays() {
-          
+          console.log(sundays)
                 document.querySelector(".title").textContent = sundays.title.rendered;
                 document.querySelector(".pic").src = sundays.produktbillede[0].guid; /* Opdaterer billedets kilde med produktets billede. */
                 document.querySelector(".pic_2").src = sundays.produktbillede[1].guid; /* Opdaterer billedets kilde med produktets billede. */
