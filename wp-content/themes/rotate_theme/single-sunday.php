@@ -82,7 +82,7 @@ get_header();
             visSundays();
         }
 
-        function visSundays() {
+        function visSunday() {
           console.log(sundays)
                 document.querySelector(".title").textContent = sundays.title.rendered;
                 document.querySelector(".pic").src = sundays.produktbillede[0].guid; /* Opdaterer billedets kilde med produktets billede. */
