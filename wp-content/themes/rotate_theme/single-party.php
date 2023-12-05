@@ -91,7 +91,7 @@ get_header();
                 document.querySelector(".pic").src = partys.produktbillede[0].guid;
                 document.querySelector(".pic_2").src = partys.produktbillede[1].guid; /* Opdaterer billedets kilde med produktets billede. */
                 document.querySelector(".pic_3").src = partys.produktbillede[2].guid; /* Opdaterer billedets kilde med produktets billede. */
-                document.querySelector(".pris").textContent = partys.pris;
+                document.querySelector(".pris").textContent = partys.prisdk;
                 document.querySelector(".farve").textContent = document.querySelector(".farve").textContent.concat(partys.color); /* concat sættes, så den tilføjer hvad der står i html'et merger det */
                 document.querySelector(".circle_singleview").style.backgroundColor = partys.farve; 
 
