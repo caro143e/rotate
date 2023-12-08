@@ -16,7 +16,7 @@ get_header();
 
 <section id="primary" class="content-area">
      <div class="banner">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/rotate.svg" alt="Rotate logo">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/rotate.svg" alt="Rotate logo" class="responsive-svg">
     </div>
    
     <main id="main" class="site-main">   
