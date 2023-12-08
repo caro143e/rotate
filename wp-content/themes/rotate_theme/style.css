@@ -531,7 +531,12 @@ Description: Stylish Child Theme based on Astra
   }
 }
 .responsive-svg {
-  width: 100%; /* Set the width to 100% to make it responsive */
-  height: auto; /* Allow the height to adjust proportionally */
-  max-width: 100%; /* Ensure it doesn't exceed its original size */
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .responsive-svg {
+    width: 60%;
+  }
 }
