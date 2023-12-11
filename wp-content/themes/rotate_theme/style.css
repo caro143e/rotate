@@ -189,7 +189,7 @@ Description: Stylish Child Theme based on Astra
   border: solid 1px black;
 }
 .banner {
-  background-color: #212121;
+  background-color: black;
   position: relative;
   padding-block: 64px;
   padding-inline: 256px;
@@ -547,7 +547,7 @@ Description: Stylish Child Theme based on Astra
   display: grid;
   grid-template-columns: repeat(
     auto-fill,
-    minmax(200px, 1fr)
+    minmax(250px, 4fr)
   ); /* Create a grid with 4 columns that adjust to available space */
   grid-gap: 20px; /* Add some spacing between grid items */
   padding: 20px;
@@ -595,7 +595,9 @@ Description: Stylish Child Theme based on Astra
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
+ul {
+  margin: 0;
+}
 .footer-newsletter-signup .submit-button {
   padding: 10px 20px;
   border: none;
@@ -613,6 +615,10 @@ Description: Stylish Child Theme based on Astra
   background-color: #333;
 }
 
+.signup-container {
+  grid-column: 4; /* Place it in the fourth column */
+}
+
 @media (max-width: 768px) {
   .custom-footer-container {
     grid-template-columns: 1fr;
@@ -628,6 +634,6 @@ Description: Stylish Child Theme based on Astra
 }
 
 .footer-logo {
-  max-width: 100px; /* set the maximum size of the logo */
+  max-width: 100%; /* set the maximum size of the logo */
   height: auto; /* maintain aspect ratio */
 }

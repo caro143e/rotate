@@ -61,21 +61,20 @@ if ( ! defined( 'ABSPATH' ) ) {
     </div>
     
     <!-- Column 4 with Sign Up Form -->
-    <div class="footer-column">
-        <div class="footer-newsletter-signup">
-            <h5>SIGN UP FOR ROTATE WORLD</h5>
-            <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post">
-                <input type="hidden" name="action" value="handle_newsletter_signup">
-    
-                <input type="email" id="newsletter-email" name="email" placeholder="Your email address" required>
-                <button type="submit" class="submit-button">SUBMIT</button>
-            </form>
-        </div>
+    <div class="footer-column signup-container">
+    <div class="footer-newsletter-signup">
+        <h5>SIGN UP FOR ROTATE WORLD</h5>
+        <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post">
+            <input type="hidden" name="action" value="handle_newsletter_signup">
+            <input type="email" id="newsletter-email" name="email" placeholder="Your email address" required>
+            <button type="submit" class="submit-button">SUBMIT</button>
+        </form>
     </div>
+  </div>
 
 </div>
 <div class="footer-logo-container">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/logo.svg" alt="Logo" class="footer-logo">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/logo.svg" alt="Logo" class="footer-logo" >
 </div>
 
 
