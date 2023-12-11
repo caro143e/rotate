@@ -545,18 +545,14 @@ Description: Stylish Child Theme based on Astra
 
 .custom-footer-container {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(250px, 4fr)
-  ); /* Create a grid with 4 columns that adjust to available space */
-  grid-gap: 20px; /* Add some spacing between grid items */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 4fr));
+  grid-gap: 20px;
   padding: 20px;
   justify-content: space-between;
 }
 
 .footer-column {
   flex: 1;
-  /* min-width: 200px; Remove this line to allow the columns to automatically adjust */
   margin-bottom: 20px;
 }
 
@@ -571,10 +567,7 @@ Description: Stylish Child Theme based on Astra
   text-decoration: none;
 }
 
-/* Styles for the sign-up form */
-.footer-newsletter-signup {
-  margin-top: 20px;
-}
+/* Styles for  sign-up form */
 
 .footer-newsletter-signup h3 {
   margin-bottom: 10px;
@@ -615,25 +608,10 @@ ul {
   background-color: #333;
 }
 
-.signup-container {
-  grid-column: 4; /* Place it in the fourth column */
-}
-
 @media (max-width: 768px) {
   .custom-footer-container {
     grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
   }
-  .footer-logo-container {
-    width: 100%;
-  }
-}
-
-.footer-logo-container {
-  text-align: center;
-  padding: 20px;
-}
-
-.footer-logo {
-  max-width: 100%; /* set the maximum size of the logo */
-  height: auto; /* maintain aspect ratio */
 }
