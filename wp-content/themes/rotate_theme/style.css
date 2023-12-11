@@ -540,3 +540,15 @@ Description: Stylish Child Theme based on Astra
     min-width: 180px;
   }
 }
+
+.footer-image {
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  height: auto; /* Allow the height to adjust proportionally */
+}
+
+/* Media query for screens with a maximum width of 768px (typical for tablets and phones) */
+@media (max-width: 768px) {
+  .footer-image {
+    max-width: 80%; /* Reduce the width on smaller screens to avoid overlap */
+  }
+}

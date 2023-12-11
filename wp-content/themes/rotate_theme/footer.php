@@ -18,6 +18,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php astra_content_bottom(); ?>
 	</div> <!-- ast-container -->
 	</div><!-- #content -->
+
+  <div class="footer-image">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/logo.svg" alt="Footer logo">
+</div>
+
 <?php 
 	astra_content_after();
 		
