@@ -194,6 +194,12 @@ Description: Stylish Child Theme based on Astra
   padding-block: 64px;
   padding-inline: 256px;
 }
+.banner2 {
+  background-color: #dbdbd9;
+  position: relative;
+  padding-block: 64px;
+  padding-inline: 256px;
+}
 
 /*STYLING AF HEADER*/
 
@@ -625,5 +631,12 @@ ul {
 
   .banner {
     padding-inline: 20px;
+  }
+  .banner2 {
+    padding-inline: 20px;
+  }
+
+  .cardcontainer {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

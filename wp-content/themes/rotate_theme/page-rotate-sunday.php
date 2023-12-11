@@ -14,6 +14,9 @@ get_header();
 
 
 <section id="primary" class="content-area">
+    <div class="banner2">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/sunday.svg" alt="Rotate logo" class="responsive-svg">
+    </div>
    <main id="main" class="site-main">
      <section class="cardcontainer"></section> 
     </main>
