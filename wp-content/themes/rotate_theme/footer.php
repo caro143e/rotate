@@ -68,6 +68,9 @@ if ( ! defined( 'ABSPATH' ) ) {
   </div>
 
 </div>
+<div class="logo-bund">
+	  <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/foot-logo.svg" alt="Rotate logo">
+</div>
 
 
 <?php 

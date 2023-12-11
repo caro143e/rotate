@@ -607,11 +607,23 @@ ul {
 .footer-newsletter-signup .submit-button:hover {
   background-color: #333;
 }
+.logo-bund {
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+}
 
 @media (max-width: 768px) {
   .custom-footer-container {
     grid-template-columns: 1fr;
     justify-content: center;
     align-content: center;
+  }
+  .logo-bund {
+    max-width: 50%;
+  }
+
+  .banner {
+    padding-inline: 20px;
   }
 }
