@@ -29,10 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		
 	astra_footer_after(); 
 ?>
- <div class="footer-image">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/logo.svg" alt="Footer logo">
-</div>
-
+ 
     
 <?php 
 	astra_body_bottom();    
