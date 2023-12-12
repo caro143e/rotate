@@ -72,25 +72,25 @@ get_header();
    </main>
 
     <script>
-        let sundays;
-        const dbUrl = "https://loststudios.dk/kea/rotate/wp-json/wp/v2/sundays/"+<?php echo get_the_ID() ?>;
+        let sunday;
+        const dbUrl = "https://loststudios.dk/kea/rotate/wp-json/wp/v2/sunday/"+<?php echo get_the_ID() ?>;
 
         async function getJson() {
             const data = await fetch(dbUrl);
-            sundays = await data.json();
-            console.log(sundays);
+            sunday = await data.json();
+            console.log(sunday);
             visSunday();
         }
 
         function visSunday() {
-          console.log(sundays)
-                document.querySelector(".title").textContent = sundays.title.rendered;
-                document.querySelector(".pic").src = sundays.produktbillede[0].guid; /* Opdaterer billedets kilde med produktets billede. */
-                document.querySelector(".pic_2").src = sundays.produktbillede[1].guid; /* Opdaterer billedets kilde med produktets billede. */
-                document.querySelector(".pic_3").src = sundays.produktbillede[2].guid;
-                document.querySelector(".pris").textContent = sundays.prisdk;
-                document.querySelector(".farve").textContent = document.querySelector(".farve").textContent.concat(sundays.color); /* concat sættes, så den tilføjer hvad der står i html'et merger det */
-                document.querySelector(".circle_singleview").style.backgroundColor = sundays.farve; 
+          console.log(sunday)
+                document.querySelector(".title").textContent = sunday.title.rendered;
+                document.querySelector(".pic").src = sunday.produktbillede[0].guid; /* Opdaterer billedets kilde med produktets billede. */
+                document.querySelector(".pic_2").src = sunday.produktbillede[1].guid; /* Opdaterer billedets kilde med produktets billede. */
+                document.querySelector(".pic_3").src = sunday.produktbillede[2].guid;
+                document.querySelector(".pris").textContent = sunday.prisdk;
+                document.querySelector(".farve").textContent = document.querySelector(".farve").textContent.concat(sunday.color); /* concat sættes, så den tilføjer hvad der står i html'et merger det */
+                document.querySelector(".circle_singleview").style.backgroundColor = sunday.farve; 
 
             }
           let slideIndex = 1;

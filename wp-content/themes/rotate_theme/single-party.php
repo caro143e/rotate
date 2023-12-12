@@ -75,25 +75,25 @@ get_header();
    </main>
 
     <script>
-        let partys; /* Opretter en variabel "news" for at gemme data om produktet. */
+        let party; /* Opretter en variabel "news" for at gemme data om produktet. */
         const dbUrl = "https://loststudios.dk/kea/rotate/wp-json/wp/v2/party/"+<?php echo get_the_ID() ?>; /* Opretter en konstant "dbUrl" med URL'en til WordPress REST API-endepunktet for at hente detaljer om den aktuelle post. */
 
         async function getJson() { /* Starter en asynkron funktion "getJson", der håndterer fetching af JSON-data. */
             const data = await fetch(dbUrl); /* Fetcher data fra den angivne URL og venter på svaret. */
-            partys = await data.json();  /* Oversætter data til JSON-format og gemmer det i "news" variablen. */
-            console.log(partys);/* Udskriver "news" objektet til konsollen. For at tjekke om det virker*/
+            party = await data.json();  /* Oversætter data til JSON-format og gemmer det i "news" variablen. */
+            console.log(party);/* Udskriver "news" objektet til konsollen. For at tjekke om det virker*/
             visParty(); /* Kalder funktionen "visNews()" for at opdatere HTML-elementerne med data. */
         }
 
         function visParty() { /* Starter en funktion "visNews" for at opdatere HTML-elementerne med data om produktet */
-        console.log(partys)
-                document.querySelector(".title").textContent = partys.title.rendered;
-                document.querySelector(".pic").src = partys.produktbillede[0].guid;
-                document.querySelector(".pic_2").src = partys.produktbillede[1].guid; /* Opdaterer billedets kilde med produktets billede. */
-                document.querySelector(".pic_3").src = partys.produktbillede[2].guid; /* Opdaterer billedets kilde med produktets billede. */
-                document.querySelector(".pris").textContent = partys.prisdk;
-                document.querySelector(".farve").textContent = document.querySelector(".farve").textContent.concat(partys.color); /* concat sættes, så den tilføjer hvad der står i html'et merger det */
-                document.querySelector(".circle_singleview").style.backgroundColor = partys.farve; 
+        console.log(party)
+                document.querySelector(".title").textContent = party.title.rendered;
+                document.querySelector(".pic").src = party.produktbillede[0].guid;
+                document.querySelector(".pic_2").src = party.produktbillede[1].guid; /* Opdaterer billedets kilde med produktets billede. */
+                document.querySelector(".pic_3").src = party.produktbillede[2].guid; /* Opdaterer billedets kilde med produktets billede. */
+                document.querySelector(".pris").textContent = party.prisdk;
+                document.querySelector(".farve").textContent = document.querySelector(".farve").textContent.concat(party.color); /* concat sættes, så den tilføjer hvad der står i html'et merger det */
+                document.querySelector(".circle_singleview").style.backgroundColor = party.farve; 
 
             }
          let slideIndex = 1;
