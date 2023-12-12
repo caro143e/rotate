@@ -38,7 +38,7 @@ get_header();
             sundays.forEach(sundays => {
                 let klon = temp.cloneNode(true).content;
                 klon.querySelector(".title").textContent = sundays.title.rendered;
-                klon.querySelector("img").src = sundays.produktbillede.guid;
+                klon.querySelector("img").src = sundays.produktbillede[0].guid;
                 klon.querySelector(".pris").textContent = sundays.prisdk;
                 klon.querySelector(".circle").style.backgroundColor = sundays.farve; 
                 klon.querySelector("article").addEventListener("mouseover", (event) => {

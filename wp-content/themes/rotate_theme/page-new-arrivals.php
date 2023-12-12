@@ -8,8 +8,7 @@ get_header();
                  <p class="title"></p>
                  <p class="pris"></p>
                  <div class="circle"></div>
-             </div>
-             
+             </div> 
         </article>
     </template>
 

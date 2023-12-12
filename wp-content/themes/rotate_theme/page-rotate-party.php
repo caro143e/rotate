@@ -24,35 +24,35 @@ get_header();
     </main>
 
     <script>
-        let partys;
+        let party;
         const dbUrl = "https://loststudios.dk/kea/rotate/wp-json/wp/v2/party?per_page=100";
 
         async function getJson() {
             const data = await fetch(dbUrl);
-            partys = await data.json();
-            console.log(partys);
-            visPartys();
+            party = await data.json();
+            console.log(party);
+            visParty();
         }
 
-        function visPartys() {
+        function visParty() {
             let temp = document.querySelector("template");
             let container = document.querySelector(".cardcontainer")
-            partys.forEach(partys => {
+            party.forEach(party => {
                 let klon = temp.cloneNode(true).content;
-                klon.querySelector(".title").textContent = partys.title.rendered;
-                klon.querySelector("img").src = partys.produktbillede.guid;
-                klon.querySelector(".pris").textContent = partys.prisdk;
-                klon.querySelector(".circle").style.backgroundColor = partys.farve; 
+                klon.querySelector(".title").textContent = party.title.rendered;
+                klon.querySelector("img").src = party.produktbillede[0].guid;
+                klon.querySelector(".pris").textContent = party.prisdk;
+                klon.querySelector(".circle").style.backgroundColor = party.farve; 
                 klon.querySelector("article").addEventListener("mouseover", (event) => {
-                event.currentTarget.querySelector("img").src = partys.produktbillede[1].guid;
+                event.currentTarget.querySelector("img").src = party.produktbillede[1].guid;
 
              });
 
               klon.querySelector("article").addEventListener("mouseout", (event) => {
-                event.currentTarget.querySelector("img").src = partys.produktbillede[0].guid;
+                event.currentTarget.querySelector("img").src = party.produktbillede[0].guid;
                 }); /*her siger så at når vi hover væk fra articlen podukt(card)over billedet skal billedet gå tilbage til det originale altsp news.produktbillede[0].guid, dette er billede nr 1 i JSON*/
 
-                klon.querySelector("article").addEventListener("click", ()=> {location.href = partys.link; })
+                klon.querySelector("article").addEventListener("click", ()=> {location.href = party.link; })
                 container.appendChild(klon);
 
          })
