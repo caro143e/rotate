@@ -51,8 +51,15 @@ if ( ! defined( 'ABSPATH' ) ) {
     <!-- Column 3 -->
     <div class="footer-column">
         <h5>FOLLOW US </h5>
-		
-        
+        <div class="socials">
+        <a href="https://www.instagram.com/rotatebirgerchristensen/">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/ig.png" alt="instagram">
+      </a>
+      <a href="https://www.facebook.com/rotatebirgerchristensen">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/fb.png" alt="facebook">
+     </a>
+     </div>
+		  
     </div>
     
     <!-- Column 4 with Sign Up Form -->

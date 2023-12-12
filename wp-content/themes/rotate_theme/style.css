@@ -619,16 +619,17 @@ ul {
   max-width: 100%;
 }
 
+.socials {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
 @media (max-width: 768px) {
   .custom-footer-container {
     grid-template-columns: 1fr;
     justify-content: center;
     align-content: center;
-  }
-  .logo-bund {
-    display: grid;
-    place-items: center;
-    max-width: 50%;
   }
 
   .banner {
