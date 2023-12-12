@@ -204,55 +204,51 @@ Description: Stylish Child Theme based on Astra
 /*STYLING AF HEADER*/
 
 /* Header Styling */
-.site-header {
-  border-bottom: solid 1px grey;
-  padding: 0px 20px;
+ .site-header {
+
   width: 100%;
   height: 50px;
   font-weight: bold;
-}
+} 
 
 /* Branding Styling */
-.site-branding img {
+ .site-branding img {
   max-width: 100%;
   height: auto;
   width: 150px;
-}
+} 
 
-.site-branding {
+ .site-branding {
   display: flex;
   align-items: center;
   gap: 32px;
-}
+} 
 
 /* Navigation Styling */
-.main-navigation {
+ .main-navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+} 
 
-.nav-menu {
+ .nav-menu {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  margin-left: auto; /* Flytter menuen til højre */
+  margin-left: auto; 
   gap: 32px;
 }
 
-.nav-menu li {
-  margin-right: 20px;
-}
 
-.nav-menu a {
+ .nav-menu a {
   text-decoration: none;
-  color: #333; /* Tilpas farven efter behov */
+  color: #333; 
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 14px; /* Tilpas størrelsen efter behov */
+  font-size: 14px;
   cursor: pointer;
-}
+} 
 
 /* Header Icons Styling */
 .header-icons {
@@ -618,6 +614,11 @@ ul {
   display: grid;
   place-items: center;
   max-width: 100%;
+  margin-top: 64px;
+}
+
+.logo-bund img {
+  min-width: 100%;
 }
 
 .social-link {
