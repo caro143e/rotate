@@ -52,10 +52,10 @@ if ( ! defined( 'ABSPATH' ) ) {
     <div class="footer-column">
         <h5>FOLLOW US </h5>
         <div class="socials">
-        <a href="https://www.instagram.com/rotatebirgerchristensen/">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/ig.png" alt="instagram">
+        <a href="https://www.instagram.com/rotatebirgerchristensen/" class="social-link">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/ig.png" alt="instagram" >
       </a>
-      <a href="https://www.facebook.com/rotatebirgerchristensen">
+      <a href="https://www.facebook.com/rotatebirgerchristensen" class="social-link">
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/fb.png" alt="facebook">
      </a>
      </div>

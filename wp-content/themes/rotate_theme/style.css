@@ -619,10 +619,11 @@ ul {
   max-width: 100%;
 }
 
-.socials {
+.social-link {
   display: inline-block;
   margin-right: 10px;
   vertical-align: middle;
+  max-width: 30px;
 }
 
 @media (max-width: 768px) {
