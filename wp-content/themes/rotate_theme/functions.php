@@ -9,4 +9,9 @@ Bemærk at vi ikke bruger 'get_template_directory_uri' men 'get_stylesheet_direc
 */
 wp_enqueue_style( 'child-style', get_stylesheet_directory_uri().'/style.css', array('parent-style') );
 }
+function load_jquery() {
+    wp_enqueue_script('jquery');
+}
+
+add_action('wp_enqueue_scripts', 'load_jquery');
 ?>
