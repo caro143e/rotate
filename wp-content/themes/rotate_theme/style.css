@@ -7,6 +7,7 @@ Description: Stylish Child Theme based on Astra
 */
 body {
   background-color: #ffffff !important;
+  max-width: 2000px !important;
 }
 @font-face {
   font-family: "drunk";
@@ -689,7 +690,7 @@ ul {
     margin: 0 auto;
   }
 }
-/* Add this CSS to your theme's stylesheet or a custom CSS file */
+
 
 .fixed-header{
   background-image: url("pictures/test_logo.svg"); 
@@ -703,4 +704,21 @@ ul {
 .ast-container{
   position: relative;
   background-color: #fff;
+  max-width: 2000px !important;
 }
+
+@media  (min-width: 1500px) {
+  .fixed-header {
+    min-height: 290px;
+  }
+
+}
+
+@media  (max-width: 768px) {
+  .fixed-header {
+    display: none;
+  }
+
+}
+
+
