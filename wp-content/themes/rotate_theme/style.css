@@ -394,6 +394,21 @@ Description: Stylish Child Theme based on Astra
   cursor: pointer;
 }
 
+.size_flexbox_2 p:hover {
+  border: 1px solid black;
+  width: fit-content;
+  height: fit-content;
+ 
+}
+.size_flexbox_2 p{
+  border-radius: 50%;
+  border: 1px solid transparent;
+  width: fit-content;
+  height: fit-content;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
 .circle_singleview {
   width: 16px;
   height: 16px;
