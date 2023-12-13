@@ -189,7 +189,7 @@ Description: Stylish Child Theme based on Astra
   border: solid 1px black;
 }
 .banner {
-  background-color: black;
+  background-color: #212121;
   position: relative;
   padding-block: 64px;
   padding-inline: 256px;
@@ -674,5 +674,18 @@ ul {
     height: auto;
     display: block;
     margin: 0 auto;
+  }
+}
+.moving-logo {
+  position: relative;
+  animation: moveLogo 5s linear infinite alternate;
+}
+
+@keyframes moveLogo {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px); /* Adjust the horizontal distance */
   }
 }
