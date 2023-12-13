@@ -204,51 +204,49 @@ Description: Stylish Child Theme based on Astra
 /*STYLING AF HEADER*/
 
 /* Header Styling */
- .site-header {
-
+.site-header {
   width: 100%;
   height: 50px;
   font-weight: bold;
-} 
+}
 
 /* Branding Styling */
- .site-branding img {
+.site-branding img {
   max-width: 100%;
   height: auto;
   width: 150px;
-} 
+}
 
- .site-branding {
+.site-branding {
   display: flex;
   align-items: center;
   gap: 32px;
-} 
+}
 
 /* Navigation Styling */
- .main-navigation {
+.main-navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
-} 
+}
 
- .nav-menu {
+.nav-menu {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  margin-left: auto; 
+  margin-left: auto;
   gap: 32px;
 }
 
-
- .nav-menu a {
+.nav-menu a {
   text-decoration: none;
-  color: #333; 
+  color: #333;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 14px;
   cursor: pointer;
-} 
+}
 
 /* Header Icons Styling */
 .header-icons {
@@ -410,8 +408,6 @@ Description: Stylish Child Theme based on Astra
   padding-right: 6px;
   padding-left: 6px;
 }
-
-
 
 .circle_singleview {
   width: 16px;
