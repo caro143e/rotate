@@ -687,6 +687,7 @@ ul {
   transition: opacity 0.3s ease;
   width: 80%; /* Adjust the logo size as needed */
   background-color: #ffff;
+  position: fixed;
 }
 
 .fixed-header {
@@ -694,4 +695,10 @@ position: fixed;
 min-height: 400px;
 background-image: url("pictures/foot-logo.svg");
 background-attachment: fixed;
+}
+
+.ast-container {
+  position: relative;
+  background: white;
+
 }
