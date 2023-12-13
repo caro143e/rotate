@@ -680,25 +680,16 @@ ul {
 }
 /* Add this CSS to your theme's stylesheet or a custom CSS file */
 
-.moving-logo {
-  display: block;
-  margin: 0 auto;
-  padding: 20px 0;
-  transition: opacity 0.3s ease;
-  width: 80%; /* Adjust the logo size as needed */
-  background-color: #ffff;
-  position: fixed;
+.fixed-header{
+  background-image: url("pictures/test_logo.svg"); 
+  min-height: 230px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.fixed-header {
-position: fixed;
-min-height: 400px;
-background-image: url("pictures/foot-logo.svg");
-background-attachment: fixed;
-}
 
-.ast-container {
+.ast-container{
   position: relative;
-  background: white;
-
+  background-color: #fff;
 }
