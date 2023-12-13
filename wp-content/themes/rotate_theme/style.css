@@ -689,11 +689,12 @@ ul {
 }
 
 .moving-logo {
-  width: 200px; /* Adjust the logo size as needed */
+  width: 100%; /* Adjust the logo size as needed */
   transition: opacity 0.3s ease; /* Add a smooth transition effect for opacity */
+  background-color: #f2f2f2;
 }
 
-.menu {
+.ast-main-header-wrap .main-header-bar-wrap {
   display: none; /* Hide the menu initially */
   text-align: center;
   padding: 10px 0;
