@@ -210,7 +210,11 @@ body {
   width: 100%;
   height: 50px;
   font-weight: bold;
+  position: -webkit-sticky !important;
+  position: sticky;
+  top: 25;
 }
+
 
 /* Branding Styling */
 .site-branding img {
@@ -230,7 +234,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
+
+
+ 
 
 .nav-menu {
   list-style: none;
@@ -292,7 +303,7 @@ body {
   background-color: var(--Bg-Primary);
   border-bottom: solid 1px lightgray;
   padding: 0px 0px;
-  position: relative;
+  
 }
 
 .site-branding img {
