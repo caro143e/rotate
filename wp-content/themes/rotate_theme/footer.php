@@ -33,8 +33,12 @@ if ( ! defined( 'ABSPATH' ) ) {
     <div class="footer-column">
         <h5>ABOUT</h5>
         <ul class="footer-list">
-            <li>OUR STORY</li>
+             <a href="https://loststudios.dk/kea/rotate/about-and-contact/">
+                <li>OUR STORY</li>
+            </a> 
+            <a href="https://loststudios.dk/kea/rotate/contact-us/">
             <li>CONTACT</li>
+            </a> 
         </ul>
     </div>
     
@@ -42,9 +46,15 @@ if ( ! defined( 'ABSPATH' ) ) {
     <div class="footer-column">
         <h5>HELP</h5>
         <ul class="footer-list">
+            <a href="https://loststudios.dk/kea/rotate/faq/"> 
             <li>FAQ</li>
+          </a>
+            <a href="https://loststudios.dk/kea/rotate/faq/"> 
             <li>SHIPPING & RETURNS</li>
+            </a>
+            <a href="https://loststudios.dk/kea/rotate/faq/"> 
             <li>TERMS & CONDITIONS </li>
+            </a>
         </ul>
     </div>
     
