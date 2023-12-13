@@ -84,7 +84,7 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
             if (!<?php echo $is_forside_home ? 'true' : 'false'; ?>) {
                 return; // Don't apply scrolling effect if not on the landing page
             }
-            if ($(this).scrollTop() > 100) { // Adjust the scroll position as needed
+            if ($(this).scrollTop() > 400) { // Adjust the scroll position as needed
                 $('.header').addClass('scrolled');
                 $('.moving-logo').css('opacity', '0');
             } else {
