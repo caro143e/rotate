@@ -62,13 +62,40 @@ get_header();
             <p class="size-button">46</p>
         </div>
         <div class="button_box"> 
-        <button> ADD TO CART</button>
+        <button class="button_add_to_cart" onclick="showCartMenu()"> ADD TO CART</button>
         </div>
 
         <p class="details">PRODUCT DETAILS</p>
         <p class="shipping">SHIPPING & RETURNS</p>
       </div>
         </article>
+        <div class="add_to_cart">
+          <div>
+            YOUR CART: (1)
+          </div>
+        <div class="add_indhold">
+          <div class="add_billede">
+            <img class="cart_pic" src="" alt="" >
+          </div>
+          <div class="add_data">
+            <h4 class="cart_title"></h4>
+            <p class="cart_farve">COLOUR: </p>
+            <p class="cart_size">SIZE: </p>
+            <p>QTY: 1 </p>
+            <h5 class="cart_pris"></h5>
+          </div>
+
+        </div>
+        <hr>
+        <div class="add_buttons">
+            <h5 class="cart_subtotal">SUBTOTAL</h5>
+            <a href="https://loststudios.dk/kea/rotate/cart/"><button class="checkOutButton">PROCEED TO CHECK OUT</button></a>
+           <button class="closeShopping" onclick="closeCartMenu()">CONTINUE SHOPPING</button>
+            <p class="terms_and_conditions">BY PROCEEDING WITH THIS PAYMENT, YOU ACCEPT THE TERMS AND CONDITIONS AND CONFIRM THAT YOU HAVE READ AND UNDERSTOOD THE PRIVACY POLICY </p>
+          </div>
+        </div>
+
+        <div class="shadow_overlay"></div>
    </main>
 
     <script>
@@ -80,6 +107,7 @@ get_header();
             sunday = await data.json();
             console.log(sunday);
             visSunday();
+            buildCartMenu();
         }
 
         function visSunday() {
@@ -141,11 +169,37 @@ function handleButtonClick() {
 
   // Add 'active' class to the clicked button
   this.classList.add('active-size');
+
+  active_size = this.textContent;
+  buildCartMenu()
 }
 
 // Attach click event listeners to each size button
 sizeButtons.forEach(button => button.addEventListener('click', handleButtonClick));
+let active_size = 32;
 
+function buildCartMenu() {
+  document.querySelector(".cart_title").textContent = sunday.title.rendered;
+  document.querySelector('.cart_pic').src = sunday.produktbillede[0].guid;
+  document.querySelector(".cart_pris").textContent = sunday.prisdk;
+  document.querySelector(".cart_farve").textContent = 'COLOUR: ' + sunday.color;
+  document.querySelector(".cart_size").textContent = 'Size: ' + active_size;
+  document.querySelector(".cart_subtotal").textContent = 'SUBTOTAL: ' + sunday.prisdk;
+}
+
+function showCartMenu() {
+  let sideMenu = document.querySelector('.add_to_cart');
+  let sideOverlay = document.querySelector('.shadow_overlay');
+  sideMenu.classList.add('active_add_to_cart');
+  sideOverlay.classList.add('active_shadow_overlay');
+}
+
+function closeCartMenu() {
+  let sideMenu = document.querySelector('.add_to_cart');
+  let sideOverlay = document.querySelector('.shadow_overlay');
+  sideMenu.classList.remove('active_add_to_cart');
+  sideOverlay.classList.remove('active_shadow_overlay');
+}
      </script>
  
 </section>
