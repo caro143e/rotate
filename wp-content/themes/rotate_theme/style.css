@@ -682,13 +682,9 @@ ul {
 
 .moving-logo {
   display: block;
-  text-align: center;
+  margin: 0 auto;
   padding: 20px 0;
   transition: opacity 0.3s ease;
-}
-
-.moving-logo {
-  width: 100%; /* Adjust the logo size as needed */
+  width: 80%; /* Adjust the logo size as needed */
   background-color: #ffff;
-  height: 50%;
 }
