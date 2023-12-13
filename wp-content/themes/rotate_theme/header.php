@@ -34,7 +34,7 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 <?php astra_head_bottom(); ?>
 
 </head>
- <div class="fixed-header>
+ <div class="fixed-header">
 		<?php astra_content_top(); ?>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/foot-logo.svg" alt="logo" class="moving-logo">
