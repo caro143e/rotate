@@ -687,4 +687,5 @@ ul {
   transition: opacity 0.3s ease;
   width: 80%; /* Adjust the logo size as needed */
   background-color: #ffff;
+  position: fixed;
 }

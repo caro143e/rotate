@@ -32,17 +32,16 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 ?>
 <?php wp_head(); ?>
 <?php astra_head_bottom(); ?>
-<?php
-$is_front_home = is_front_page(); // Check if you are on the landing page
-?>
+
 </head>
 
 		<div class="ast-container">
-        
+        <div class="fixed-header>
 		<?php astra_content_top(); ?>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/foot-logo.svg" alt="logo" class="moving-logo">
        </a>
+      </div>
 
 <body <?php astra_schema_body(); ?> <?php body_class(); ?>>
 <?php astra_body_top(); ?>
