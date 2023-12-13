@@ -53,14 +53,14 @@ get_header();
         </div>
 
         <div class="size_flexbox_2"> 
-            <p>32</p>
-            <p>34</p>
-            <p>36</p>
-            <p>38</p>
-            <p>40</p>
-            <p>42</p>
-            <p>44</p>
-            <p>46</p>
+            <p class="size-button">32</p>
+            <p class="size-button">34</p>
+            <p class="size-button">36</p>
+            <p class="size-button">38</p>
+            <p class="size-button">40</p>
+            <p class="size-button">42</p>
+            <p class="size-button">44</p>
+            <p class="size-button">46</p>
         </div>
         <div class="button_box"> 
         <button> ADD TO CART</button>
@@ -129,6 +129,23 @@ function showSlides(n) {
     
 
         getJson();
+
+
+        
+        // Get all size buttons
+  const sizeButtons = document.querySelectorAll('.size-button');
+
+// Function to handle button click
+function handleButtonClick() {
+  // Remove 'active' class from all buttons
+  sizeButtons.forEach(button => button.classList.remove('active-size'));
+
+  // Add 'active' class to the clicked button
+  this.classList.add('active-size');
+}
+
+// Attach click event listeners to each size button
+sizeButtons.forEach(button => button.addEventListener('click', handleButtonClick));
 
      </script>
  
