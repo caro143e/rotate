@@ -15,9 +15,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?><!DOCTYPE html>
+
 <?php astra_html_before(); ?>
 <html <?php language_attributes(); ?>>
 <head>
+
 <?php astra_head_top(); ?>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,6 +33,13 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 <?php wp_head(); ?>
 <?php astra_head_bottom(); ?>
 </head>
+
+		<div class="ast-container">
+        
+		<?php astra_content_top(); ?>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/foot-logo.svg" alt="logo" class="moving-logo">
+       </a>
 
 <body <?php astra_schema_body(); ?> <?php body_class(); ?>>
 <?php astra_body_top(); ?>
@@ -64,12 +73,6 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 
 	astra_content_before();
 	?>
+	
 	<div id="content" class="site-content">
-		<div class="ast-container">
-        
-		<?php astra_content_top(); ?>
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/foot-logo.svg" alt="logo" class="moving-logo">
-       </a>
- 
 	
