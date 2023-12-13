@@ -75,9 +75,13 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 <script> 
 
 				jQuery(document).ready(function($) {
-					$(window).scroll(function() {
-						$('.moving-logo').toggleClass('animate-logo', $(this).scrollTop() > 100); // Adjust the scroll position as needed
-					});
-				});
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) { // Adjust the scroll position as needed
+            $('.header').addClass('scrolled');
+        } else {
+            $('.header').removeClass('scrolled');
+        }
+    });
+}); 
 			
 </script>
