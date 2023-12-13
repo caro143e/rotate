@@ -5,7 +5,7 @@ Author: Caroline og Helena
 Version: 1.0.0
 Description: Stylish Child Theme based on Astra
 */
-body{
+body {
   background-color: #ffffff !important;
 }
 @font-face {
@@ -680,11 +680,7 @@ ul {
 }
 /* Add this CSS to your theme's stylesheet or a custom CSS file */
 
-.ast-main-header-wrap .main-header-bar-wrap {
-  transition: background-color 0.3s ease; /* Add a smooth transition effect for background color */
-}
-
-.logo {
+.moving-logo {
   display: block;
   text-align: center;
   padding: 20px 0;
@@ -692,25 +688,5 @@ ul {
 
 .moving-logo {
   width: 100%; /* Adjust the logo size as needed */
-  transition: opacity 0.3s ease; /* Add a smooth transition effect for opacity */
   background-color: #ffff;
-}
-
-.ast-main-header-wrap .main-header-bar-wrap {
-  display: none; /* Hide the menu initially */
-  text-align: center;
-  padding: 10px 0;
-}
-
-/* Show the menu when the user scrolls down */
-.ast-main-header-wrap .main-header-bar-wrap.scrolled {
-  background-color: #fff; /* Change the background color as needed */
-}
-
-.ast-main-header-wrap .main-header-bar-wrap.scrolled .moving-logo {
-  opacity: 0; /* Hide the logo when scrolled */
-}
-
-.ast-main-header-wrap .main-header-bar-wrap.scrolled .menu {
-  display: block; /* Show the menu when scrolled */
 }

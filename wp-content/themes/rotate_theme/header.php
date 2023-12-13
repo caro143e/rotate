@@ -71,16 +71,5 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/foot-logo.svg" alt="logo" class="moving-logo">
        </a>
-<script> 
-
-				jQuery(document).ready(function($) {
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) { // Adjust the scroll position as needed
-            $('.header').addClass('scrolled');
-        } else {
-            $('.header').removeClass('scrolled');
-        }
-    });
-}); 
-			
-</script>
+ 
+	
