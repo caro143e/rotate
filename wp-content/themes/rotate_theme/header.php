@@ -66,12 +66,11 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 	?>
 	<div id="content" class="site-content">
 		<div class="ast-container">
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+        
+		<?php astra_content_top(); ?>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/foot-logo.svg" alt="logo" class="moving-logo">
        </a>
-	
-
-		<?php astra_content_top(); ?>
 <script> 
 
 				jQuery(document).ready(function($) {
