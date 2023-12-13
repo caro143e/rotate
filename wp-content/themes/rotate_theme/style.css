@@ -693,4 +693,5 @@ ul {
 position: fixed;
 min-height: 400px;
 background-image: url("pictures/foot-logo.svg");
+background-attachment: fixed;
 }
