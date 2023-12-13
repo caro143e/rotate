@@ -32,6 +32,9 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 ?>
 <?php wp_head(); ?>
 <?php astra_head_bottom(); ?>
+<?php
+$is_front_home = is_front_page(); // Check if you are on the landing page
+?>
 </head>
 
 		<div class="ast-container">
@@ -76,3 +79,19 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 	
 	<div id="content" class="site-content">
 	
+	<script>
+    jQuery(document).ready(function ($) {
+        $(window).scroll(function () {
+            if (!<?php echo $is_forside_home ? 'true' : 'false'; ?>) {
+                return; // Don't apply scrolling effect if not on the landing page
+            }
+            if ($(this).scrollTop() > 100) { // Adjust the scroll position as needed
+                $('.header').addClass('scrolled');
+                $('.moving-logo').css('opacity', '0');
+            } else {
+                $('.header').removeClass('scrolled');
+                $('.moving-logo').css('opacity', '1');
+            }
+        });
+    });
+</script>
