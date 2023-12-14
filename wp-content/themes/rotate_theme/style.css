@@ -830,11 +830,22 @@ ul {
    height: fit-content !important; 
 }
 
-
-}
-
-
 /* burgermenu */
-.page_item .page-item-458 .menu-item {
+.page-item-458 {
   display: none;
 }
+.page_item .page-item-468 .menu-item {
+  display: none;
+}
+
+#button_world {
+  width: 100%;
+}
+
+.page_item.page-item-44 {
+  display: none;
+}
+
+}
+
+

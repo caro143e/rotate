@@ -1,6 +1,7 @@
 <?php
 get_header();
 ?>
+<meta name="shop side">
 <template>
         <article>
         <img src="" alt="" height="603px" width="403px">
