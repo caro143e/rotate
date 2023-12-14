@@ -14,7 +14,7 @@ get_header();
 
 <section id="primary" class="content-area">
     <main id="main" class="site-main">
-        <h3>Shop</h3>
+        
         <section class="cardcontainer"></section>  
     </main>
 
