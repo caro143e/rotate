@@ -63,10 +63,10 @@ if ( ! defined( 'ABSPATH' ) ) {
         <h5>FOLLOW US </h5>
         <div class="socials">
         <a href="https://www.instagram.com/rotatebirgerchristensen/" class="social-link">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/ig.png" alt="instagram" >
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/ig.png" alt="instagram" height="30px" width="30px">
       </a>
       <a href="https://www.facebook.com/rotatebirgerchristensen" class="social-link">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/fb.png" alt="facebook">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/fb.png" alt="facebook" height="30px" width="30px">>
      </a>
      </div>
 		  
@@ -86,7 +86,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 </div>
 <div class="logo-bund">
-	  <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/top.svg" alt="Rotate logo">
+	  <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/top.svg" alt="Rotate logo" width="1440px" height="318px">
 </div>
 
 

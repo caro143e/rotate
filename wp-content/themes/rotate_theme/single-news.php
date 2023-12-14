@@ -1,6 +1,7 @@
 <?php
 get_header();
 ?>
+<meta name="viewport" content="initial-scale=1.0, width=device-width">
 <section id="primary" class="content-area">
    <main id="main" class="site-main"> 
  
@@ -70,33 +71,37 @@ get_header();
       </div>
         </article>
 
-        <div class="add_to_cart">
-          <div>
-            YOUR CART: (1)
-          </div>
-        <div class="add_indhold">
-          <div class="add_billede">
-            <img class="cart_pic" src="" alt="" >
-          </div>
-          <div class="add_data">
-            <h4 class="cart_title"></h4>
-            <p class="cart_farve">COLOUR: </p>
-            <p class="cart_size">SIZE: </p>
-            <p>QTY: 1 </p>
-            <h5 class="cart_pris"></h5>
-          </div>
-          
-        </div>
-        <hr>
-          <div class="add_buttons">
-            <h5 class="cart_subtotal">SUBTOTAL</h5>
-            <a href="https://loststudios.dk/kea/rotate/cart/"><button class="checkOutButton">PROCEED TO CHECK OUT</button></a>
-           <button class="closeShopping" onclick="closeCartMenu()">CONTINUE SHOPPING</button>
-            <p class="terms_and_conditions">BY PROCEEDING WITH THIS PAYMENT, YOU ACCEPT THE TERMS AND CONDITIONS AND CONFIRM THAT YOU HAVE READ AND UNDERSTOOD THE PRIVACY POLICY </p>
-          </div>
+        <div class="cart_responsiv">
+          <div class="add_to_cart">
+                    <div>
+                      YOUR CART: (1)
+                    </div>
+                  <div class="add_indhold">
+                    <div class="add_billede">
+                      <img class="cart_pic" src="" alt="" >
+                    </div>
+                    <div class="add_data">
+                      <h4 class="cart_title"></h4>
+                      <p class="cart_farve">COLOUR: </p>
+                      <p class="cart_size">SIZE: </p>
+                      <p>QTY: 1 </p>
+                      <h5 class="cart_pris"></h5>
+                    </div>
+                    
+                  </div>
+                  <hr>
+                    <div class="add_buttons">
+                      <h5 class="cart_subtotal">SUBTOTAL</h5>
+                      <a href="https://loststudios.dk/kea/rotate/cart/"><button class="checkOutButton">PROCEED TO CHECK OUT</button></a>
+                    <button class="closeShopping" onclick="closeCartMenu()">CONTINUE SHOPPING</button>
+                      <p class="terms_and_conditions">BY PROCEEDING WITH THIS PAYMENT, YOU ACCEPT THE TERMS AND CONDITIONS AND CONFIRM THAT YOU HAVE READ AND UNDERSTOOD THE PRIVACY POLICY </p>
+                    </div>
+                  </div>
+
+                  <div class="shadow_overlay"></div>
         </div>
 
-        <div class="shadow_overlay"></div>
+        
    </main>
 
     <script>

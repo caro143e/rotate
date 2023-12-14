@@ -72,6 +72,7 @@ get_header();
 
          
         </article>
+        <div class="cart_responsiv">
         <div class="add_to_cart">
           <div>
             YOUR CART: (1)
@@ -100,6 +101,7 @@ get_header();
         </div>
 
         <div class="shadow_overlay"></div>
+</div>
    </main>
 
     <script>

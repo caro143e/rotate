@@ -3,7 +3,7 @@ get_header();
 ?>
 <template>
         <article>
-            <img src="" alt="">
+        <img src="" alt="" height="603px" width="403px">
              <div class="indhold">
                  <p class="title"></p>
                  <p class="pris"></p>

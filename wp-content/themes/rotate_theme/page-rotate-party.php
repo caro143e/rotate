@@ -5,7 +5,7 @@ get_header();
    
  <template>
         <article>
-            <img src="" alt="">
+            <img src="" alt="" height="603px" width="403px">
              <div class="indhold">
                  <p class="title"></p>
                  <p class="pris"></p>
@@ -16,7 +16,7 @@ get_header();
 
 <section id="primary" class="content-area">
      <div class="banner">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/rotate.svg" alt="Rotate logo" class="responsive-svg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/rotate.svg" alt="Rotate logo" class="responsive-svg" height="197px" width="928px">
     </div>
    
     <main id="main" class="site-main">   
