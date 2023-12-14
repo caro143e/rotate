@@ -216,7 +216,6 @@ body {
   top: 25;
 }
 
-
 /* Branding Styling */
 .site-branding img {
   max-width: 100%;
@@ -240,9 +239,6 @@ body {
   position: sticky;
   top: 0;
 }
-
-
- 
 
 .nav-menu {
   list-style: none;
@@ -304,7 +300,6 @@ body {
   background-color: var(--Bg-Primary);
   border-bottom: solid 1px lightgray;
   padding: 0px 0px;
-  
 }
 
 .site-branding img {
@@ -643,7 +638,6 @@ ul {
   display: grid;
   place-items: center;
   max-width: 100%;
-  margin-top: 64px;
 }
 
 .logo-bund img {
@@ -691,43 +685,38 @@ ul {
   }
 }
 
-
-.fixed-header{
-  background-image: url("pictures/test_logo.svg"); 
+.fixed-header {
+  background-image: url("pictures/top.svg");
   min-height: 230px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-
-.ast-container{
+.ast-container {
   position: relative;
   background-color: #fff;
   max-width: 2000px !important;
 }
 
-@media  (min-width: 1500px) {
+@media (min-width: 1500px) {
   .fixed-header {
     min-height: 290px;
   }
-
 }
 
-@media  (max-width: 768px) {
+@media (max-width: 768px) {
   .fixed-header {
     display: none;
   }
-
 }
-
 
 /* ADD TO CART STYLING */
 
 .add_to_cart {
   position: absolute;
   top: 0;
-  left: 100% ;
+  left: 100%;
   width: 500px;
   background-color: white;
   height: 100%;
@@ -742,7 +731,6 @@ ul {
   left: calc(100% - 500px);
   z-index: 9999;
   padding: 16px;
-
 }
 
 .shadow_overlay {
@@ -750,14 +738,13 @@ ul {
   width: 100vw;
   position: absolute;
   background: #3333336b;
-  top:0;
+  top: 0;
   display: none;
 }
 
 .active_shadow_overlay {
   display: inline;
 }
-
 
 .add_indhold {
   display: flex;
