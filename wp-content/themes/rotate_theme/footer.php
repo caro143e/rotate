@@ -66,7 +66,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/ig.png" alt="instagram" height="30px" width="30px">
       </a>
       <a href="https://www.facebook.com/rotatebirgerchristensen" class="social-link">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/fb.png" alt="facebook" height="30px" width="30px">>
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/pictures/fb.png" alt="facebook" height="30px" width="30px">
      </a>
      </div>
 		  
